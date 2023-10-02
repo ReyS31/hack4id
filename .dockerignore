@@ -31,5 +31,8 @@
 **/values.dev.yaml
 **/build
 **/dist
+**/dbml
+**/migrations
+**/test
 LICENSE
 README.md

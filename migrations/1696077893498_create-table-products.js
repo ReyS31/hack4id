@@ -13,6 +13,10 @@ exports.up = (pgm) => {
       type: 'UUID',
       notNull: true,
     },
+    thumbnail: {
+      type: 'TEXT',
+      notNull: true,
+    },
     name: {
       type: 'VARCHAR(100)',
       notNull: true,

@@ -21,6 +21,10 @@ exports.up = (pgm) => {
       type: 'VARCHAR(50)',
       notNull: true,
     },
+    thumbnail: {
+      type: 'TEXT',
+      notNull: true,
+    },
     phone: {
       type: 'VARCHAR(50)',
       notNull: true,
@@ -51,6 +55,12 @@ exports.up = (pgm) => {
     'places',
     'fk_places.user.id',
     'FOREIGN KEY(user_id) REFERENCES users(id) ON DELETE CASCADE',
+  );
+
+  pgm.addConstraint(
+    'places',
+    'fk_places.category.id',
+    'FOREIGN KEY(category_id) REFERENCES categories(id)',
   );
 };
 

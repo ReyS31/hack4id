@@ -9,5 +9,6 @@ parserOptions:
 rules: {
  linebreak-style: off,
  no-underscore-dangle: off,
- class-methods-use-this: off
+ class-methods-use-this: off,
+ camelcase: off
 }
