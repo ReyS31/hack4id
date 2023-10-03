@@ -1,6 +1,6 @@
-const createServer = require('./Infrastructures/http/createServer');
-
 require('dotenv').config();
+
+const createServer = require('./Infrastructures/http/createServer');
 
 const start = async () => {
   const server = await createServer();
