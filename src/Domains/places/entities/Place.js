@@ -9,7 +9,7 @@ class Place {
     this.name = payload.name;
     this.phone = payload.phone;
     this.email = payload.email;
-    this.alamat = payload.alamat;
+    this.address = payload.address;
     this.social_media = payload.social_media;
   }
 
@@ -21,7 +21,7 @@ class Place {
       thumbnail,
       phone,
       email,
-      alamat,
+      address,
       social_media,
     } = payload;
 
@@ -32,7 +32,7 @@ class Place {
       || !thumbnail
       || !phone
       || !email
-      || !alamat
+      || !address
       || !social_media
     ) {
       throw new Error('PLACE.NOT_CONTAIN_NEEDED_PROPERTY');
@@ -45,7 +45,7 @@ class Place {
       || typeof thumbnail !== 'string'
       || typeof phone !== 'string'
       || typeof email !== 'string'
-      || typeof alamat !== 'string'
+      || typeof address !== 'string'
       || typeof social_media !== 'object'
     ) {
       throw new Error('PLACE.NOT_MEET_DATA_TYPE_SPECIFICATION');

@@ -5,7 +5,11 @@ class PlaceQuery {
     this.name = payload.name;
     this.lat = payload.lat;
     this.long = payload.long;
-    this.page = payload.page;
+    this.page = payload.page ?? 1;
+
+    Object.keys(this).forEach(
+      (key) => this[key] === undefined && delete this[key],
+    );
   }
 
   #verifyPayload(payload) {

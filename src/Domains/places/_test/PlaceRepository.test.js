@@ -29,5 +29,13 @@ describe('PlaceRepository interface', () => {
     await expect(placeRepository.verifyPlaceExists('')).rejects.toThrowError(
       'PLACE_REPOSITORY.METHOD_NOT_IMPLEMENTED',
     );
+
+    await expect(placeRepository.isEmailAvailable('')).rejects.toThrowError(
+      'PLACE_REPOSITORY.METHOD_NOT_IMPLEMENTED',
+    );
+
+    await expect(placeRepository.isPhoneAvailable('')).rejects.toThrowError(
+      'PLACE_REPOSITORY.METHOD_NOT_IMPLEMENTED',
+    );
   });
 });

@@ -1,19 +1,20 @@
 /* eslint-disable camelcase */
-class Place {
+class PlaceMini {
   constructor(payload) {
     this.#verifyPayload(payload);
 
     this.id = payload.id;
-    this.category_id = payload.category_id;
+    this.category = payload.category;
     this.thumbnail = payload.thumbnail;
     this.name = payload.name;
     this.alamat = payload.alamat;
+    this.location = payload.location;
   }
 
   #verifyPayload(payload) {
     const {
       id,
-      category_id,
+      category,
       name,
       thumbnail,
       alamat,
@@ -21,7 +22,7 @@ class Place {
 
     if (
       !id
-      || !category_id
+      || !category
       || !name
       || !thumbnail
       || !alamat
@@ -31,7 +32,7 @@ class Place {
 
     if (
       typeof id !== 'string'
-      || typeof category_id !== 'string'
+      || typeof category !== 'string'
       || typeof name !== 'string'
       || typeof thumbnail !== 'string'
       || typeof alamat !== 'string'
@@ -41,4 +42,4 @@ class Place {
   }
 }
 
-module.exports = Place;
+module.exports = PlaceMini;

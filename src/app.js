@@ -1,13 +1,15 @@
 require('dotenv').config();
 
+const container = require('./Infrastructures/container');
 const createServer = require('./Infrastructures/http/createServer');
 
 const start = async () => {
-  const server = await createServer();
-  server.listen(process.env.HOST).then((info) => {
-    // eslint-disable-next-line no-console
-    console.log(`server start at ${info.address()}`);
-  });
+  const port = process.env.PORT;
+  const server = await createServer(container);
+  server.listen(port);
+
+  // eslint-disable-next-line no-console
+  console.log(`server start at http://localhost:${port}`);
 };
 
 start();

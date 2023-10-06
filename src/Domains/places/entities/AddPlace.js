@@ -1,5 +1,5 @@
-const validateEmail = require('../../../Commons/utlis/validateEmail');
-const validatePhone = require('../../../Commons/utlis/validatePhone');
+const validateEmail = require('../../../Commons/utils/validateEmail');
+const validatePhone = require('../../../Commons/utils/validatePhone');
 
 class AddPlace {
   constructor(payload) {
@@ -11,9 +11,13 @@ class AddPlace {
     this.name = payload.name;
     this.phone = payload.phone;
     this.email = payload.email;
-    this.alamat = payload.alamat;
+    this.address = payload.address;
     this.social_media = payload.social_media;
-    this.location = payload.location;
+    this.location = [payload.longitude, payload.latitude];
+
+    Object.keys(this).forEach(
+      (key) => this[key] === undefined && delete this[key],
+    );
   }
 
   #verifyPayload(payload) {
@@ -24,9 +28,9 @@ class AddPlace {
       name,
       phone,
       email,
-      alamat,
-      social_media,
-      location,
+      address,
+      latitude,
+      longitude,
     } = payload;
 
     if (
@@ -36,9 +40,9 @@ class AddPlace {
       || !name
       || !phone
       || !email
-      || !alamat
-      || !social_media
-      || !location
+      || !address
+      || latitude === undefined
+      || longitude === undefined
     ) {
       throw new Error('ADD_PLACE.NOT_CONTAIN_NEEDED_PROPERTY');
     }
@@ -50,9 +54,9 @@ class AddPlace {
       || typeof name !== 'string'
       || typeof phone !== 'string'
       || typeof email !== 'string'
-      || typeof alamat !== 'string'
-      || typeof social_media !== 'object'
-      || typeof location !== 'object'
+      || typeof address !== 'string'
+      || typeof latitude !== 'number'
+      || typeof longitude !== 'number'
     ) {
       throw new Error('ADD_PLACE.NOT_MEET_DATA_TYPE_SPECIFICATION');
     }
@@ -63,10 +67,6 @@ class AddPlace {
 
     if (!validateEmail(email)) {
       throw new Error('ADD_PLACE.EMAIL_IS_NOT_VALID');
-    }
-
-    if (location.length !== 2) {
-      throw new Error('ADD_PLACE.LOCATION_IS_NOT_VALID');
     }
   }
 }

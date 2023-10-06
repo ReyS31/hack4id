@@ -12,7 +12,7 @@ class PlaceRepository {
     throw new Error('PLACE_REPOSITORY.METHOD_NOT_IMPLEMENTED');
   }
 
-  async updatePlace(id, data) {
+  async updatePlace(id, updatePlace) {
     throw new Error('PLACE_REPOSITORY.METHOD_NOT_IMPLEMENTED');
   }
 
@@ -21,6 +21,14 @@ class PlaceRepository {
   }
 
   async verifyPlaceExists(id) {
+    throw new Error('PLACE_REPOSITORY.METHOD_NOT_IMPLEMENTED');
+  }
+
+  async isPhoneAvailable(phone) {
+    throw new Error('PLACE_REPOSITORY.METHOD_NOT_IMPLEMENTED');
+  }
+
+  async isEmailAvailable(email) {
     throw new Error('PLACE_REPOSITORY.METHOD_NOT_IMPLEMENTED');
   }
 }

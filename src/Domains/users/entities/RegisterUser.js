@@ -1,9 +1,11 @@
-const validateEmail = require('../../../Commons/utlis/validateEmail');
-const validatePhone = require('../../../Commons/utlis/validatePhone');
+const validateEmail = require('../../../Commons/utils/validateEmail');
+const validatePhone = require('../../../Commons/utils/validatePhone');
 
 class RegisterUser {
   constructor(payload) {
-    const { name, password, email, phone } = this.#verifyPayload(payload);
+    const {
+      name, password, email, phone,
+    } = this.#verifyPayload(payload);
 
     this.name = name;
     this.password = password;
@@ -11,16 +13,18 @@ class RegisterUser {
     this.phone = phone;
   }
 
-  #verifyPayload({ name, password, email, phone }) {
+  #verifyPayload({
+    name, password, email, phone,
+  }) {
     if (!name || !password || !email || !phone) {
       throw new Error('REGISTER_USER.NOT_CONTAIN_NEEDED_PROPERTY');
     }
 
     if (
-      typeof name !== 'string' ||
-      typeof password !== 'string' ||
-      typeof email !== 'string' ||
-      typeof phone !== 'string'
+      typeof name !== 'string'
+      || typeof password !== 'string'
+      || typeof email !== 'string'
+      || typeof phone !== 'string'
     ) {
       throw new Error('REGISTER_USER.NOT_MEET_DATA_TYPE_SPECIFICATION');
     }

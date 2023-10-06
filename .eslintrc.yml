@@ -10,5 +10,6 @@ rules: {
  linebreak-style: off,
  no-underscore-dangle: off,
  class-methods-use-this: off,
- camelcase: off
+ camelcase: off,
+ no-plusplus: off
 }

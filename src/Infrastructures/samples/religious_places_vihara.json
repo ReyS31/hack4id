@@ -1,0 +1,44 @@
+[
+    {
+        "id": 289,
+        "kelurahan": "Mugirejo",
+        "kelompok": "Vihara",
+        "nama": "MAHA VIHARA SEJAHTERA MAITREYA",
+        "alamat": "JL. DI. PANJAITAN",
+        "tahun": "0",
+        "bangunan": "0",
+        "tanah": "0",
+        "status": "Swadaya",
+        "pengurus": "-",
+        "longitude": "117.18333005905151",
+        "latitude": "-0.4631266229413318"
+    },
+    {
+        "id": 454,
+        "kelurahan": "Sidomulyo",
+        "kelompok": "Vihara",
+        "nama": "Vihara Eka Dharma Manggala",
+        "alamat": "Jl. Jenderal Urip Sumoharjo No.162 RT.30 Kelurahan Sidomulyo Kecamatan Samarinda Ilir",
+        "tahun": "0000",
+        "bangunan": "-",
+        "tanah": "-",
+        "status": "Yayasan",
+        "pengurus": "-",
+        "longitude": "117.16099421942943",
+        "latitude": "-0.4939778249909576"
+    },
+    {
+        "id": 774,
+        "kelurahan": "Sempaja Timur",
+        "kelompok": "Vihara",
+        "nama": "VIHARA MULADHARMA",
+        "alamat": "JL. PM. NOOR NO.09 RT.04",
+        "tahun": "2000",
+        "bangunan": "50",
+        "tanah": "50",
+        "status": "Yayasan",
+        "pengurus": "a",
+        "longitude": "117.16267973184586",
+        "latitude": "-0.42719147178869665"
+    }
+]

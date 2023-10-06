@@ -1,4 +1,4 @@
-const validateEmail = require('../../../Commons/utlis/validateEmail');
+const validateEmail = require('../../../Commons/utils/validateEmail');
 
 class UserLogin {
   constructor(payload) {

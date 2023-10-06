@@ -1,0 +1,1136 @@
+[
+    {
+        "id": 1,
+        "kelurahan": "Bugis",
+        "kelompok": "Hotel",
+        "nama": "HOTEL GRAND SAWIT",
+        "alamat": "Jl. Basuki Rahmat No. 34A",
+        "longitude": "-",
+        "latitude": "-"
+    },
+    {
+        "id": 2,
+        "kelurahan": "Bugis",
+        "kelompok": "Hotel",
+        "nama": "HOTEL SELYCA MULYA",
+        "alamat": "JL. BHAYANGKARA NO. 58  RT. 05 Plaza Mulya",
+        "longitude": "-",
+        "latitude": "-"
+    },
+    {
+        "id": 3,
+        "kelurahan": "Bugis",
+        "kelompok": "Hotel",
+        "nama": "HOTEL HAYANI",
+        "alamat": "JL. NILAM RT. 08 KEL. BUGIS KEC. SAMARINDA KOTA",
+        "longitude": "117.14511394500732",
+        "latitude": "-0.49932300798561136"
+    },
+    {
+        "id": 4,
+        "kelurahan": "Bugis",
+        "kelompok": "Hotel",
+        "nama": "HOTEL PIRUS",
+        "alamat": "JL. NILAM RT.08 KEL. BUGIS KEC. SAMARINDA KOTA",
+        "longitude": "117.1450924873352",
+        "latitude": "-0.49943029227117447"
+    },
+    {
+        "id": 5,
+        "kelurahan": "Bugis",
+        "kelompok": "Hotel",
+        "nama": "HOTEL HARMONI",
+        "alamat": "JL. AWANG LONG RT. 08 KEL. BUGIS KEC. SAMARINDA KOTA",
+        "longitude": "-",
+        "latitude": "-"
+    },
+    {
+        "id": 7,
+        "kelurahan": "Bugis",
+        "kelompok": "Restaurant",
+        "nama": "Pizza Hut Restoran - Plaza Mulia Samarinda",
+        "alamat": "Jl. Bhayangkara No. 58, KeL. Bugis Kec. Samarinda Kota",
+        "longitude": "-",
+        "latitude": "-"
+    },
+    {
+        "id": 8,
+        "kelurahan": "Bugis",
+        "kelompok": "Museum Sejarah",
+        "nama": "Museum Samarinda",
+        "alamat": "Jl. Bhayangkara\r\nBugis\r\nSamarinda Kota\r\nSamarinda City, East Kalimantan 75242, Indonesia",
+        "longitude": "117.14456677436829",
+        "latitude": "-0.49592352566391606"
+    },
+    {
+        "id": 9,
+        "kelurahan": "Bugis",
+        "kelompok": "Restaurant",
+        "nama": "Teplan Rumah Makan",
+        "alamat": "JL. Awang Long, No. 22 RT. 008, Bugis, Samarinda UluBugis\r\nSamarinda Kota\r\nKota Samarinda, Kalimantan Timur 75242, Indonesia",
+        "longitude": "117.14367091655731",
+        "latitude": "-0.4977393128982604"
+    },
+    {
+        "id": 10,
+        "kelurahan": "Bugis",
+        "kelompok": "Restaurant",
+        "nama": "Raja Kepala Ikan",
+        "alamat": "Jl. Awang Long RT.01 Bugis\r\nSamarinda Kota\r\nSamarinda City, East Kalimantan 75242, Indonesia",
+        "longitude": "117.14372992515564",
+        "latitude": "-0.5001612558016901"
+    },
+    {
+        "id": 11,
+        "kelurahan": "Bugis",
+        "kelompok": "Restaurant",
+        "nama": "KFC Plaza Mulia Samarinda",
+        "alamat": "Plaza Mulia, Jalan Bhayangkara No.58\r\nBugis\r\nSamarinda Kota\r\nKota Samarinda, Kalimantan Timur 75121, Indonesia",
+        "longitude": "117.14589715003967",
+        "latitude": "-0.4909616230056297"
+    },
+    {
+        "id": 12,
+        "kelurahan": "Bugis",
+        "kelompok": "Restaurant",
+        "nama": "Bagios",
+        "alamat": "Jl. Basuki Rahmat  Bugis\r\nSamarinda Kota\r\nKota Samarinda, Kalimantan Timur 75121, Indonesia",
+        "longitude": "117.14559137821198",
+        "latitude": "-0.4963955767506685"
+    },
+    {
+        "id": 13,
+        "kelurahan": "Temindung Permai",
+        "kelompok": "Hotel",
+        "nama": "Hotel Violand Garden",
+        "alamat": "Jl. A. Yani RT 003",
+        "longitude": "117.17092752456665",
+        "latitude": "-0.4692096716381629"
+    },
+    {
+        "id": 14,
+        "kelurahan": "Temindung Permai",
+        "kelompok": "Hotel",
+        "nama": "The Hotel",
+        "alamat": "Jl. S. Parman RT 031",
+        "longitude": "117.17092752456665",
+        "latitude": "-0.4692096716381629"
+    },
+    {
+        "id": 15,
+        "kelurahan": "Temindung Permai",
+        "kelompok": "Restaurant",
+        "nama": "KFC",
+        "alamat": "Jl. Hasan Basri RT 019",
+        "longitude": "117.17092752456665",
+        "latitude": "-0.4692096716381629"
+    },
+    {
+        "id": 16,
+        "kelurahan": "Temindung Permai",
+        "kelompok": "Restaurant",
+        "nama": "Richees",
+        "alamat": "Jl. Hasan Basri Rt 019",
+        "longitude": "117.17092752456665",
+        "latitude": "-0.4692096716381629"
+    },
+    {
+        "id": 17,
+        "kelurahan": "Temindung Permai",
+        "kelompok": "Restaurant",
+        "nama": "Duna Mouse",
+        "alamat": "Jl. Tekukur Rt 019",
+        "longitude": "117.17092752456665",
+        "latitude": "-0.4692096716381629"
+    },
+    {
+        "id": 18,
+        "kelurahan": "Temindung Permai",
+        "kelompok": "Restaurant",
+        "nama": "Pizza Hut",
+        "alamat": "Jl. S. Parman RT 031",
+        "longitude": "117.17092752456665",
+        "latitude": "-0.4692096716381629"
+    },
+    {
+        "id": 19,
+        "kelurahan": "Temindung Permai",
+        "kelompok": "Restaurant",
+        "nama": "Bon Cafe",
+        "alamat": "Jl. A. Yani Rt 017",
+        "longitude": "117.17092752456665",
+        "latitude": "-0.4692096716381629"
+    },
+    {
+        "id": 20,
+        "kelurahan": "Temindung Permai",
+        "kelompok": "Restaurant",
+        "nama": "Suki Kita",
+        "alamat": "Jl. A. Yani Rt 017",
+        "longitude": "117.17092752456665",
+        "latitude": "-0.4692096716381629"
+    },
+    {
+        "id": 21,
+        "kelurahan": "Temindung Permai",
+        "kelompok": "Restaurant",
+        "nama": "The Grill",
+        "alamat": "Jl. S. Parman RT 031",
+        "longitude": "117.17092752456665",
+        "latitude": "-0.4692096716381629"
+    },
+    {
+        "id": 22,
+        "kelurahan": "Temindung Permai",
+        "kelompok": "Restaurant",
+        "nama": "Chicken Duck",
+        "alamat": "Jl. A. Yani Rt 010",
+        "longitude": "117.17092752456665",
+        "latitude": "-0.4692096716381629"
+    },
+    {
+        "id": 23,
+        "kelurahan": "Temindung Permai",
+        "kelompok": "Motel",
+        "nama": "Gues House",
+        "alamat": "Jl. A. Yani 010",
+        "longitude": "117.17092752456665",
+        "latitude": "-0.4692096716381629"
+    },
+    {
+        "id": 24,
+        "kelurahan": "Temindung Permai",
+        "kelompok": "Motel",
+        "nama": "Gues House",
+        "alamat": "Jl. Belatuk Rt 016",
+        "longitude": "117.17092752456665",
+        "latitude": "-0.4692096716381629"
+    },
+    {
+        "id": 25,
+        "kelurahan": "Temindung Permai",
+        "kelompok": "Motel",
+        "nama": "Gues House",
+        "alamat": "Jl. Gelatik RT 016",
+        "longitude": "117.17092752456665",
+        "latitude": "-0.4692096716381629"
+    },
+    {
+        "id": 26,
+        "kelurahan": "Sempaja Utara",
+        "kelompok": "Tempat Rekreasi",
+        "nama": "AIR TERJUN BERAMBAI",
+        "alamat": "JL. BERAMBAI RT. 31",
+        "longitude": "117.16130509080415",
+        "latitude": "-0.41993706003485715"
+    },
+    {
+        "id": 27,
+        "kelurahan": "Sempaja Utara",
+        "kelompok": "Tempat Rekreasi",
+        "nama": "AIR TERJUN PINANG SERIBU",
+        "alamat": "PINANG SERIBU RT. 13",
+        "longitude": "117.16130509080415",
+        "latitude": "-0.41993706003485715"
+    },
+    {
+        "id": 28,
+        "kelurahan": "Sempaja Utara",
+        "kelompok": "Tempat Rekreasi",
+        "nama": "ULIN ARYA",
+        "alamat": "JL. TELUK BATU RT. 20",
+        "longitude": "117.16130509080415",
+        "latitude": "-0.41993706003485715"
+    },
+    {
+        "id": 29,
+        "kelurahan": "Sungai Pinang Luar",
+        "kelompok": "Restaurant",
+        "nama": "RESTORAN SARI RASA",
+        "alamat": "JL. DANAU TOBA RT 20",
+        "longitude": "117.15722680091858",
+        "latitude": "-0.4980638479348036"
+    },
+    {
+        "id": 31,
+        "kelurahan": "Sungai Pinang Luar",
+        "kelompok": "Restaurant",
+        "nama": "RESTAURAN  PRAMBANAN",
+        "alamat": "JL. DANAU TOBA  RT.21",
+        "longitude": "117.15722680091858",
+        "latitude": "-0.4980638479348036"
+    },
+    {
+        "id": 32,
+        "kelurahan": "Sungai Pinang Luar",
+        "kelompok": "Hotel",
+        "nama": "HOTEL MG",
+        "alamat": "JL. KH.AGUS  SALIM RT. 17",
+        "longitude": "117.15722680091858",
+        "latitude": "-0.4980638479348036"
+    },
+    {
+        "id": 34,
+        "kelurahan": "Sungai Siring",
+        "kelompok": "Restaurant",
+        "nama": "RUMAH MAKAN PADANG UPIK",
+        "alamat": "JL. POROS SAMARINDA-BONTANG, SUNGAI SIRING, SAMARINDA UTARA, SAMARINDA, KALIMANTAN TIMUR",
+        "longitude": "117.24615418785174",
+        "latitude": "-0.39618817158494934"
+    },
+    {
+        "id": 35,
+        "kelurahan": "Tanah Merah",
+        "kelompok": "Tempat Rekreasi",
+        "nama": "AIR TERJUN TANAH MERAH",
+        "alamat": "JL. CITANDUY RT. 24",
+        "longitude": "117.22105803743591",
+        "latitude": "-0.4351778830130056"
+    },
+    {
+        "id": 36,
+        "kelurahan": "Tanah Merah",
+        "kelompok": "Tempat Rekreasi",
+        "nama": "KEBUN RAYA UNMUL SAMARINDA",
+        "alamat": "JL SMD-BONTANG RT. 12",
+        "longitude": "117.22105803743591",
+        "latitude": "-0.4351778830130056"
+    },
+    {
+        "id": 37,
+        "kelurahan": "Tanah Merah",
+        "kelompok": "Tempat Rekreasi",
+        "nama": "BUKIT TANAH MERAH GOLF",
+        "alamat": "JL. SMD-BONTANG RT. 25",
+        "longitude": "117.22105803743591",
+        "latitude": "-0.4351778830130056"
+    },
+    {
+        "id": 38,
+        "kelurahan": "Tanah Merah",
+        "kelompok": "Restaurant",
+        "nama": "NUANSA RESTO & CAFE",
+        "alamat": "JL. POROS BONTANG KM.21",
+        "longitude": "117.14345680793463",
+        "latitude": "-0.4893221737428742"
+    },
+    {
+        "id": 39,
+        "kelurahan": "Tanah Merah",
+        "kelompok": "Restaurant",
+        "nama": "WARTEG 99",
+        "alamat": "JL. SMD-BONNTANG",
+        "longitude": "117.14255558570562",
+        "latitude": "-0.48934363063244884"
+    },
+    {
+        "id": 40,
+        "kelurahan": "Harapan Baru",
+        "kelompok": "Hotel",
+        "nama": "Hotel Harapan Baru",
+        "alamat": "Jl. Cipto Mangunkusumo No.62",
+        "longitude": "117.10594698786736",
+        "latitude": "-0.5400333314388939"
+    },
+    {
+        "id": 41,
+        "kelurahan": "Harapan Baru",
+        "kelompok": "Hotel",
+        "nama": "Hotel Marantama",
+        "alamat": "Jl. Cipto Mangunkusumo RT.29",
+        "longitude": "117.10594698786736",
+        "latitude": "-0.5400333314388939"
+    },
+    {
+        "id": 42,
+        "kelurahan": "Harapan Baru",
+        "kelompok": "Restaurant",
+        "nama": "Lipan Hill Resto & Cafe",
+        "alamat": "Jl. Cipto Mangunkusumo",
+        "longitude": "117.10594698786736",
+        "latitude": "-0.5400333314388939"
+    },
+    {
+        "id": 43,
+        "kelurahan": "Sambutan",
+        "kelompok": "Tempat Rekreasi",
+        "nama": "Kolam Wisata Tjiu Palace",
+        "alamat": "Jl. Sultan Sulaiman No.6\r\nSambutan RT 18\r\nSamarinda City,",
+        "longitude": "117.19120502471924",
+        "latitude": "-0.5157281851250598"
+    },
+    {
+        "id": 44,
+        "kelurahan": "Loa Bakung",
+        "kelompok": "Tempat Rekreasi",
+        "nama": "TAMAN SEGITIGA LOA BAKUNG",
+        "alamat": "JL. JAKARTA BLOK. K RT. 54",
+        "longitude": "117.0918639519756",
+        "latitude": "-0.5310611139858785"
+    },
+    {
+        "id": 45,
+        "kelurahan": "Sempaja Barat",
+        "kelompok": "Losmen",
+        "nama": "Guest House Pondok Asri",
+        "alamat": "Jl. AW. Syahrani Gg. Pondok Asri RT.03",
+        "longitude": "117.14868442025033",
+        "latitude": "-0.4496280957696335"
+    },
+    {
+        "id": 46,
+        "kelurahan": "Lempake",
+        "kelompok": "Tempat Rekreasi",
+        "nama": "Bendungan Benanga",
+        "alamat": "Jln. Joyo Mulyo RT.30 Kelurahan Lempake",
+        "longitude": "117.19305621703802",
+        "latitude": "-0.4091373242847471"
+    },
+    {
+        "id": 47,
+        "kelurahan": "Lempake",
+        "kelompok": "Tempat Rekreasi",
+        "nama": "Track Dayung",
+        "alamat": "Jln. Sido Rejo RT.41 Kelurahan Lempake",
+        "longitude": "117.20056640227972",
+        "latitude": "-0.4223560384012816"
+    },
+    {
+        "id": 48,
+        "kelurahan": "Sungai Kapih",
+        "kelompok": "Tempat Rekreasi",
+        "nama": "PEMANCINGAN MAHKOTA",
+        "alamat": "JALAN TATAKO RT. 25",
+        "longitude": "117.17654943466187",
+        "latitude": "-0.535135833359235"
+    },
+    {
+        "id": 49,
+        "kelurahan": "Gunung Panjang",
+        "kelompok": "Restaurant",
+        "nama": "Lipan Hill Resto & Cafe",
+        "alamat": "Jl. Cipto Mangunkusumo Harapan Baru",
+        "longitude": "117.114617228508",
+        "latitude": "-0.5383811638512765"
+    },
+    {
+        "id": 50,
+        "kelurahan": "Gunung Panjang",
+        "kelompok": "Hotel",
+        "nama": "Hotel Manau",
+        "alamat": "Jl. Cipto Mangunkusumo",
+        "longitude": "117.12470233440399",
+        "latitude": "-0.5319119578977846"
+    },
+    {
+        "id": 51,
+        "kelurahan": "Gunung Panjang",
+        "kelompok": "Tempat Rekreasi",
+        "nama": "Lipan Hill Swimingpool",
+        "alamat": "Jl. Cipto Mangunkusumo",
+        "longitude": "117.11415588855743",
+        "latitude": "-0.5381665965992282"
+    },
+    {
+        "id": 52,
+        "kelurahan": "Gunung Panjang",
+        "kelompok": "Tempat Rekreasi",
+        "nama": "Danau Perum Pinang Bahari",
+        "alamat": "Perum Pinang Bahari",
+        "longitude": "117.12714345690551",
+        "latitude": "-0.5276738636190429"
+    },
+    {
+        "id": 53,
+        "kelurahan": "Sidomulyo",
+        "kelompok": "Losmen",
+        "nama": "Guest House",
+        "alamat": "Jl. Urip Sumoharjo RT. 29",
+        "longitude": "117.16281652450562",
+        "latitude": "-0.49097235144780255"
+    },
+    {
+        "id": 54,
+        "kelurahan": "Pasar Pagi",
+        "kelompok": "Hotel",
+        "nama": "Hotel Aida",
+        "alamat": "JL. KH. Mas Temenggung",
+        "longitude": "117.1468842850594",
+        "latitude": "-0.5002792559830667"
+    },
+    {
+        "id": 55,
+        "kelurahan": "Pasar Pagi",
+        "kelompok": "Hotel",
+        "nama": "Hotel Hidayah 1",
+        "alamat": "JL. KH. Mas Temenggung No.4",
+        "longitude": "117.1468842850594",
+        "latitude": "-0.5002792559830667"
+    },
+    {
+        "id": 56,
+        "kelurahan": "Pasar Pagi",
+        "kelompok": "Hotel",
+        "nama": "Hotel Mega Sentosa",
+        "alamat": "JL. Veteran No.88",
+        "longitude": "117.1468842850594",
+        "latitude": "-0.5002792559830667"
+    },
+    {
+        "id": 57,
+        "kelurahan": "Pasar Pagi",
+        "kelompok": "Hotel",
+        "nama": "Hotel Grand Kartika",
+        "alamat": "Jl. KH. Khalid No. 35",
+        "longitude": "117.1468842850594",
+        "latitude": "-0.5002792559830667"
+    },
+    {
+        "id": 58,
+        "kelurahan": "Pasar Pagi",
+        "kelompok": "Hotel",
+        "nama": "Grand Jamrud Hotel",
+        "alamat": "Jl. Jamrud",
+        "longitude": "117.1468842850594",
+        "latitude": "-0.5002792559830667"
+    },
+    {
+        "id": 59,
+        "kelurahan": "Pasar Pagi",
+        "kelompok": "Hotel",
+        "nama": "Hotel MJ",
+        "alamat": "Jl. KH. Khalid No.1",
+        "longitude": "117.1468842850594",
+        "latitude": "-0.5002792559830667"
+    },
+    {
+        "id": 60,
+        "kelurahan": "Pasar Pagi",
+        "kelompok": "Hotel",
+        "nama": "Hotel Pirus",
+        "alamat": "Jl. Pirus No. 30",
+        "longitude": "117.1468842850594",
+        "latitude": "-0.5002792559830667"
+    },
+    {
+        "id": 61,
+        "kelurahan": "Gunung Lingai",
+        "kelompok": "Tempat Rekreasi",
+        "nama": "Bukit Aren",
+        "alamat": "Jl. Gn. Lingai, Gn. Lingai, Kec. Sungai Pinang, Kota Samarinda, Kalimantan Timur 75242",
+        "longitude": "117.17642605304718",
+        "latitude": "-0.4468890416493116"
+    },
+    {
+        "id": 62,
+        "kelurahan": "Sempaja Selatan",
+        "kelompok": "Hotel",
+        "nama": "Hotel Atlit Sempaja",
+        "alamat": "Komplek Stadion Madya Sempaja",
+        "longitude": "117.14764547261393",
+        "latitude": "-0.46858966231495597"
+    },
+    {
+        "id": 63,
+        "kelurahan": "Sempaja Selatan",
+        "kelompok": "Motel",
+        "nama": "Meta Medika Guest House",
+        "alamat": "Jl. Wahid Hasyim",
+        "longitude": "117.14764547261393",
+        "latitude": "-0.46858966231495597"
+    },
+    {
+        "id": 64,
+        "kelurahan": "Sempaja Selatan",
+        "kelompok": "Motel",
+        "nama": "airy room Sempaja Selatan",
+        "alamat": "Jl.Pramuka 1",
+        "longitude": "117.14764547261393",
+        "latitude": "-0.46858966231495597"
+    },
+    {
+        "id": 65,
+        "kelurahan": "Sempaja Selatan",
+        "kelompok": "Motel",
+        "nama": "OYO Raudah Guest House",
+        "alamat": "Jl.Pramuka 1",
+        "longitude": "117.14764547261393",
+        "latitude": "-0.46858966231495597"
+    },
+    {
+        "id": 66,
+        "kelurahan": "Sempaja Selatan",
+        "kelompok": "Motel",
+        "nama": "Reddorrz Guest House",
+        "alamat": "Jl Pramuka 1 No.7",
+        "longitude": "117.14764547261393",
+        "latitude": "-0.46858966231495597"
+    },
+    {
+        "id": 67,
+        "kelurahan": "Sempaja Selatan",
+        "kelompok": "Restaurant",
+        "nama": "Bakso Seger",
+        "alamat": "Jl.Pramuka 5",
+        "longitude": "117.14764547261393",
+        "latitude": "-0.46858966231495597"
+    },
+    {
+        "id": 68,
+        "kelurahan": "Sempaja Selatan",
+        "kelompok": "Restaurant",
+        "nama": "Bakso Solo Baru Sari",
+        "alamat": "Jl.Perjuangan",
+        "longitude": "117.14764547261393",
+        "latitude": "-0.46858966231495597"
+    },
+    {
+        "id": 69,
+        "kelurahan": "Sempaja Selatan",
+        "kelompok": "Restaurant",
+        "nama": "Roti O",
+        "alamat": "Jl.Pramuka",
+        "longitude": "117.14764547261393",
+        "latitude": "-0.46858966231495597"
+    },
+    {
+        "id": 70,
+        "kelurahan": "Sempaja Selatan",
+        "kelompok": "Restaurant",
+        "nama": "Pecel Family",
+        "alamat": "Jl.Wahid Hasyim",
+        "longitude": "117.14764547261393",
+        "latitude": "-0.46858966231495597"
+    },
+    {
+        "id": 71,
+        "kelurahan": "Sempaja Selatan",
+        "kelompok": "Restaurant",
+        "nama": "Pecel Madiun",
+        "alamat": "Jl. wahid hasyim",
+        "longitude": "117.14764547261393",
+        "latitude": "-0.46858966231495597"
+    },
+    {
+        "id": 72,
+        "kelurahan": "Pelabuhan",
+        "kelompok": "Hotel",
+        "nama": "HOTEL SENYIUR",
+        "alamat": "jalan P. Diponegoro",
+        "longitude": "117.15412061871712",
+        "latitude": "-0.49892752220666114"
+    },
+    {
+        "id": 73,
+        "kelurahan": "Pelabuhan",
+        "kelompok": "Hotel",
+        "nama": "HOTEL RAJA",
+        "alamat": "jalan Imam Bonjol",
+        "longitude": "117.15412061871712",
+        "latitude": "-0.49892752220666114"
+    },
+    {
+        "id": 74,
+        "kelurahan": "Pelabuhan",
+        "kelompok": "Hotel",
+        "nama": "HOTEL HORISON",
+        "alamat": "Jalan Imam Bonjol",
+        "longitude": "117.15412061871712",
+        "latitude": "-0.49892752220666114"
+    },
+    {
+        "id": 75,
+        "kelurahan": "Pelabuhan",
+        "kelompok": "Hotel",
+        "nama": "HOTEL ASTON",
+        "alamat": "jalan P. Hidayatulah",
+        "longitude": "117.15412061871712",
+        "latitude": "-0.49892752220666114"
+    },
+    {
+        "id": 76,
+        "kelurahan": "Pelabuhan",
+        "kelompok": "Hotel",
+        "nama": "HOTEL ZOOM",
+        "alamat": "Jalan Mulawarman",
+        "longitude": "117.15412061871712",
+        "latitude": "-0.49892752220666114"
+    },
+    {
+        "id": 77,
+        "kelurahan": "Pelabuhan",
+        "kelompok": "Hotel",
+        "nama": "HOTEL SWISS BELL",
+        "alamat": "Jalan  Mulawarman",
+        "longitude": "117.15412061871712",
+        "latitude": "-0.49892752220666114"
+    },
+    {
+        "id": 78,
+        "kelurahan": "Pelabuhan",
+        "kelompok": "Hotel",
+        "nama": "HOTEL IBIS DAN HOTEL MERCURY",
+        "alamat": "Jalan Mulawarman",
+        "longitude": "117.15412061871712",
+        "latitude": "-0.49892752220666114"
+    },
+    {
+        "id": 79,
+        "kelurahan": "Pelabuhan",
+        "kelompok": "Hotel",
+        "nama": "HOTEL GADING KENCANA",
+        "alamat": "Jalan P. Sulawesi",
+        "longitude": "117.15412061871712",
+        "latitude": "-0.49892752220666114"
+    },
+    {
+        "id": 80,
+        "kelurahan": "Bugis",
+        "kelompok": "Tempat Rekreasi",
+        "nama": "TAMAN SAMARENDAH",
+        "alamat": "JL. BHAYANGKARA RT 5",
+        "longitude": "117.14167582114874",
+        "latitude": "-0.4920471981677138"
+    },
+    {
+        "id": 81,
+        "kelurahan": "Bugis",
+        "kelompok": "Losmen",
+        "nama": "Guest house CEMPAKA",
+        "alamat": "JL. CEMPAKA RT 05 KEL. BUGIS",
+        "longitude": "117.14167582114874",
+        "latitude": "-0.4920471981677138"
+    },
+    {
+        "id": 82,
+        "kelurahan": "Mangkupalas",
+        "kelompok": "Tempat Rekreasi",
+        "nama": "WISATA TEBING LONCENG",
+        "alamat": "JL. DWIKORA RT 17",
+        "longitude": "117.14982658624649",
+        "latitude": "-0.5285566581042254"
+    },
+    {
+        "id": 83,
+        "kelurahan": "Sindang Sari",
+        "kelompok": "Tempat Rekreasi",
+        "nama": "Pemancingan Lion Jaya",
+        "alamat": "JL. Masaji Sindang Sari",
+        "longitude": "117.2312879562378",
+        "latitude": "-0.5609589601648542"
+    },
+    {
+        "id": 84,
+        "kelurahan": "Sindang Sari",
+        "kelompok": "Tempat Rekreasi",
+        "nama": "Pemancingan Maidiyan Fun Fishing",
+        "alamat": "JL. Dahlia RT. 09 Sindang Sari",
+        "longitude": "117.2312879562378",
+        "latitude": "-0.5609589601648542"
+    },
+    {
+        "id": 85,
+        "kelurahan": "Sindang Sari",
+        "kelompok": "Tempat Rekreasi",
+        "nama": "Pemancingan Lien Star",
+        "alamat": "JL. Pasundan RT. 03 Sindang Sari",
+        "longitude": "117.2312879562378",
+        "latitude": "-0.5609589601648542"
+    },
+    {
+        "id": 86,
+        "kelurahan": "Sungai Kapih",
+        "kelompok": "Restaurant",
+        "nama": "SOTO BANJAR TARGIBUL IKHWAN",
+        "alamat": "JL. KAPTENSOEDJONO AJ RT. 03",
+        "longitude": "117.17654943466187",
+        "latitude": "-0.535135833359235"
+    },
+    {
+        "id": 87,
+        "kelurahan": "Sungai Kapih",
+        "kelompok": "Restaurant",
+        "nama": "BAKSO GOYANG LIDAH",
+        "alamat": "JL. KAPTEN SOEDJONO AJ. RT. 03",
+        "longitude": "117.17654943466187",
+        "latitude": "-0.535135833359235"
+    },
+    {
+        "id": 88,
+        "kelurahan": "Sungai Kapih",
+        "kelompok": "Restaurant",
+        "nama": "RUMAH MAKAN BOROBUDUR",
+        "alamat": "JL. KAPTEN SOEDJONO AJ. RT. 03",
+        "longitude": "117.17654943466187",
+        "latitude": "-0.535135833359235"
+    },
+    {
+        "id": 89,
+        "kelurahan": "Sungai Kapih",
+        "kelompok": "Restaurant",
+        "nama": "BAKSO & MIE AYAM TRUBUS",
+        "alamat": "JL. SEJATI RT. 21",
+        "longitude": "117.17654943466187",
+        "latitude": "-0.535135833359235"
+    },
+    {
+        "id": 90,
+        "kelurahan": "Jawa",
+        "kelompok": "Tempat Rekreasi",
+        "nama": "Tepian",
+        "alamat": "Jl. Gajah Mada",
+        "longitude": "117.13556930422783",
+        "latitude": "-0.49790158041852306"
+    },
+    {
+        "id": 91,
+        "kelurahan": "Jawa",
+        "kelompok": "Restaurant",
+        "nama": "Rumah Makan Bemo",
+        "alamat": "Jl. Gn Arjuna",
+        "longitude": "117.13556930422783",
+        "latitude": "-0.49790158041852306"
+    },
+    {
+        "id": 92,
+        "kelurahan": "Tanah Merah",
+        "kelompok": "Tempat Rekreasi",
+        "nama": "JUNGLE WATER",
+        "alamat": "JALAN SAMARINDA - BONTANG RT. 27",
+        "longitude": "117.22105803743591",
+        "latitude": "-0.4351778830130056"
+    },
+    {
+        "id": 93,
+        "kelurahan": "Tanah Merah",
+        "kelompok": "Tempat Rekreasi",
+        "nama": "KEBUN DESA",
+        "alamat": "JALAN CITANDUY RT.24",
+        "longitude": "117.22105803743591",
+        "latitude": "-0.4351778830130056"
+    },
+    {
+        "id": 94,
+        "kelurahan": "Pelabuhan",
+        "kelompok": "Restaurant",
+        "nama": "Rumah Cafe Yung's",
+        "alamat": "Jalan Imam Bonjol Gang Darma RT. 14",
+        "longitude": "117.15412061871712",
+        "latitude": "-0.49892752220666114"
+    },
+    {
+        "id": 95,
+        "kelurahan": "Pelabuhan",
+        "kelompok": "Restaurant",
+        "nama": "Rumah Makan Layar Mahakam",
+        "alamat": "Jalan Imam Bonjol  RT. 25",
+        "longitude": "117.15412061871712",
+        "latitude": "-0.49892752220666114"
+    },
+    {
+        "id": 96,
+        "kelurahan": "Pelabuhan",
+        "kelompok": "Restaurant",
+        "nama": "Rumah Makan Pa Wondo",
+        "alamat": "Jalan P. Hidayatullah RT. 09",
+        "longitude": "117.15412061871712",
+        "latitude": "-0.49892752220666114"
+    },
+    {
+        "id": 97,
+        "kelurahan": "Pelabuhan",
+        "kelompok": "Restaurant",
+        "nama": "Cafe Arab",
+        "alamat": "Jalan P. Flores",
+        "longitude": "117.15412061871712",
+        "latitude": "-0.49892752220666114"
+    },
+    {
+        "id": 98,
+        "kelurahan": "Pelabuhan",
+        "kelompok": "Restaurant",
+        "nama": "Rumah Makan Bojonegoro",
+        "alamat": "Jalan P. Flores RT. 20",
+        "longitude": "117.15412061871712",
+        "latitude": "-0.49892752220666114"
+    },
+    {
+        "id": 99,
+        "kelurahan": "Pelabuhan",
+        "kelompok": "Restaurant",
+        "nama": "Citra Grand Senyiur City",
+        "alamat": "Jalan P. Hidayatullah RT. 09",
+        "longitude": "117.15412061871712",
+        "latitude": "-0.49892752220666114"
+    },
+    {
+        "id": 100,
+        "kelurahan": "Pelabuhan",
+        "kelompok": "Restaurant",
+        "nama": "Depot Ahoy",
+        "alamat": "Jalan P. Hidayatullah  RT. 07",
+        "longitude": "117.15412061871712",
+        "latitude": "-0.49892752220666114"
+    },
+    {
+        "id": 101,
+        "kelurahan": "Pelabuhan",
+        "kelompok": "Restaurant",
+        "nama": "Rumah Makan Gudeg BU Harman",
+        "alamat": "Jalan Imam Bonjol RT. 025",
+        "longitude": "117.15412061871712",
+        "latitude": "-0.49892752220666114"
+    },
+    {
+        "id": 102,
+        "kelurahan": "Pelabuhan",
+        "kelompok": "Restaurant",
+        "nama": "Rumah Makan Mahkota",
+        "alamat": "Jalan Dermaga RT. 28",
+        "longitude": "117.15412061871712",
+        "latitude": "-0.49892752220666114"
+    },
+    {
+        "id": 103,
+        "kelurahan": "Pelabuhan",
+        "kelompok": "Restaurant",
+        "nama": "Restaurant Lezat",
+        "alamat": "Jalan MUlawarman  RT. 04",
+        "longitude": "117.15412061871712",
+        "latitude": "-0.49892752220666114"
+    },
+    {
+        "id": 104,
+        "kelurahan": "Pelabuhan",
+        "kelompok": "Restaurant",
+        "nama": "KFC Samarinda",
+        "alamat": "Jalan Mulawarman RT. 04",
+        "longitude": "117.15412061871712",
+        "latitude": "-0.49892752220666114"
+    },
+    {
+        "id": 105,
+        "kelurahan": "Pelabuhan",
+        "kelompok": "Restaurant",
+        "nama": "El Barito Resto & Cafe",
+        "alamat": "Jalan S. Barito RT. 22",
+        "longitude": "117.15412061871712",
+        "latitude": "-0.49892752220666114"
+    },
+    {
+        "id": 106,
+        "kelurahan": "Pelabuhan",
+        "kelompok": "Restaurant",
+        "nama": "Rumah Makan Amado Soto Banjar",
+        "alamat": "Jalan P. Diponegoro RT. 16",
+        "longitude": "117.15412061871712",
+        "latitude": "-0.49892752220666114"
+    },
+    {
+        "id": 107,
+        "kelurahan": "Pelabuhan",
+        "kelompok": "Restaurant",
+        "nama": "Restaurant Yogi Cwnggoro/Cina",
+        "alamat": "Jalan Mulawarman RT. 04",
+        "longitude": "117.15412061871712",
+        "latitude": "-0.49892752220666114"
+    },
+    {
+        "id": 108,
+        "kelurahan": "Pelabuhan",
+        "kelompok": "Restaurant",
+        "nama": "Restaurant Anti/Coto Makasar",
+        "alamat": "Jalan Mulawarman RT. 04",
+        "longitude": "117.15412061871712",
+        "latitude": "-0.49892752220666114"
+    },
+    {
+        "id": 109,
+        "kelurahan": "Pelabuhan",
+        "kelompok": "Restaurant",
+        "nama": "Restaurant Ayam Betutu Pa To",
+        "alamat": "Jalan Aminah Syukur Samping Gang Mulia",
+        "longitude": "117.15412061871712",
+        "latitude": "-0.49892752220666114"
+    },
+    {
+        "id": 110,
+        "kelurahan": "Karang Asam Ulu",
+        "kelompok": "Hotel",
+        "nama": "Harris",
+        "alamat": "Jl. Untung Suropati",
+        "longitude": "117.11728334426881",
+        "latitude": "-0.5203735812453806"
+    },
+    {
+        "id": 111,
+        "kelurahan": "Karang Anyar",
+        "kelompok": "Tempat Rekreasi",
+        "nama": "Taman Sejati",
+        "alamat": "Jl. MT haryono RT 37",
+        "longitude": "117.11515903472902",
+        "latitude": "-0.4947863115440212"
+    },
+    {
+        "id": 112,
+        "kelurahan": "Karang Anyar",
+        "kelompok": "Tempat Rekreasi",
+        "nama": "Taman lalu Lintas Kantor Kelurahan Karang Anyar",
+        "alamat": "Jl. MT Haryono Rt 15",
+        "longitude": "117.11352288722993",
+        "latitude": "-0.4988631159731656"
+    },
+    {
+        "id": 113,
+        "kelurahan": "Karang Anyar",
+        "kelompok": "Hotel",
+        "nama": "Hotel Kharisma",
+        "alamat": "Jl. Tengkawang RT 15",
+        "longitude": "117.1147084236145",
+        "latitude": "-0.5019099892142451"
+    },
+    {
+        "id": 114,
+        "kelurahan": "Karang Anyar",
+        "kelompok": "Hotel",
+        "nama": "Hotel OYO Tengkawang",
+        "alamat": "Jl. Tengkawang Rt 15",
+        "longitude": "117.11422562599184",
+        "latitude": "-0.5014701237986054"
+    },
+    {
+        "id": 115,
+        "kelurahan": "Karang Anyar",
+        "kelompok": "Restaurant",
+        "nama": "Rumah Makan Pak Ndut",
+        "alamat": "Jl. Teuku Umar RT 15",
+        "longitude": "117.11203694343568",
+        "latitude": "-0.5025644230705829"
+    },
+    {
+        "id": 116,
+        "kelurahan": "Karang Anyar",
+        "kelompok": "Restaurant",
+        "nama": "Rumah Makan Iwak Bakuyung",
+        "alamat": "Jl. Kelapa Gading RT 15",
+        "longitude": "117.11588859558107",
+        "latitude": "-0.5007191339962728"
+    },
+    {
+        "id": 117,
+        "kelurahan": "Karang Anyar",
+        "kelompok": "Restaurant",
+        "nama": "Cafe The Puncak",
+        "alamat": "Jl. MT haryono RT 01",
+        "longitude": "117.11757302284242",
+        "latitude": "-0.49329505877073054"
+    },
+    {
+        "id": 119,
+        "kelurahan": "Karang Anyar",
+        "kelompok": "Restaurant",
+        "nama": "Cafe Teras Rumah",
+        "alamat": "Jl. MT Haryono Gg Alam Indah RT 38",
+        "longitude": "117.1167039871216",
+        "latitude": "-0.49525836271181417"
+    },
+    {
+        "id": 120,
+        "kelurahan": "Karang Anyar",
+        "kelompok": "Restaurant",
+        "nama": "Rumah Makan Kediri",
+        "alamat": "Jl Teuku Umar Rt 15",
+        "longitude": "117.11192965507509",
+        "latitude": "-0.5015344943490763"
+    },
+    {
+        "id": 121,
+        "kelurahan": "Handil Bakti",
+        "kelompok": "Hotel",
+        "nama": "Sejahtera",
+        "alamat": "Jl. Trikora RT. 25 Kel. Handil Bakti",
+        "longitude": "117.18168776617472",
+        "latitude": "-0.5889068209225506"
+    },
+    {
+        "id": 122,
+        "kelurahan": "Handil Bakti",
+        "kelompok": "Tempat Rekreasi",
+        "nama": "Kolam Rerang",
+        "alamat": "Jl. Nusa Indah RT.  05 Kel. Handil Bakti",
+        "longitude": "117.18168776617472",
+        "latitude": "-0.5889068209225506"
+    },
+    {
+        "id": 123,
+        "kelurahan": "Karang Asam Ilir",
+        "kelompok": "Restaurant",
+        "nama": "Wongsolo Baru Samarinda",
+        "alamat": "Jalan Slamet Riyadi Rt. 02",
+        "longitude": "117.11839377880098",
+        "latitude": "-0.5078857188706507"
+    },
+    {
+        "id": 124,
+        "kelurahan": "Karang Asam Ilir",
+        "kelompok": "Restaurant",
+        "nama": "Sambal Lalap Samarinda",
+        "alamat": "Jalan Slamet Riyadi Rt. 04",
+        "longitude": "117.1177124977112",
+        "latitude": "-0.5095486229119018"
+    },
+    {
+        "id": 125,
+        "kelurahan": "Karang Asam Ilir",
+        "kelompok": "Restaurant",
+        "nama": "Mie Jogja Pak Karso",
+        "alamat": "Jalan Slamet Riyadi Rt. 08",
+        "longitude": "117.11764276027681",
+        "latitude": "-0.5098007405839434"
+    },
+    {
+        "id": 126,
+        "kelurahan": "Karang Asam Ilir",
+        "kelompok": "Restaurant",
+        "nama": "Raja Se'i",
+        "alamat": "Jalan Slamet Riyadi Rt. 14",
+        "longitude": "117.11680591106416",
+        "latitude": "-0.513164096666953"
+    },
+    {
+        "id": 127,
+        "kelurahan": "Karang Asam Ilir",
+        "kelompok": "Motel",
+        "nama": "OYO 90550 Good Sleep 3 Samarinda",
+        "alamat": "Jalan Teuku Umar Rt. 20",
+        "longitude": "117.11391448974611",
+        "latitude": "-0.5133035659401021"
+    },
+    {
+        "id": 128,
+        "kelurahan": "Karang Asam Ilir",
+        "kelompok": "Losmen",
+        "nama": "Kos H&M Perumahan Citra Griya",
+        "alamat": "Jalan Adam Malik Rt.24",
+        "longitude": "117.11011648178102",
+        "latitude": "-0.511388545270184"
+    },
+    {
+        "id": 129,
+        "kelurahan": "Karang Asam Ilir",
+        "kelompok": "Losmen",
+        "nama": "Rumah Catur Pamungkas",
+        "alamat": "Jl. Adam Malik Perumahan CItra Griya Blok H No.11 Rt. 22, Karang Asam Ilir, Kec. Sungai Kunjang, Kota Samarinda, Kalimantan Timur 75243",
+        "longitude": "117.11103916168214",
+        "latitude": "-0.5112007981148866"
+    },
+    {
+        "id": 130,
+        "kelurahan": "Karang Asam Ilir",
+        "kelompok": "Tempat Rekreasi",
+        "nama": "Mahakam Lampion Garden",
+        "alamat": "Jl. Slamet Riyadi No.75 Rt. 02, Karang Asam Ilir, Kec. Sungai Kunjang, Kota Samarinda, Kalimantan Timur 75243",
+        "longitude": "117.11965441703798",
+        "latitude": "-0.5064481111611057"
+    }
+]

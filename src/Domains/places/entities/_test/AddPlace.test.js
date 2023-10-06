@@ -10,7 +10,7 @@ describe('AddPlace entities', () => {
       name: 'test',
       phone: '081223344556',
       email: 'test@test.test',
-      alamat: 'test',
+      address: 'test',
       social_media: {
         fb: 'test',
         x: 'test',
@@ -33,13 +33,14 @@ describe('AddPlace entities', () => {
       name: 'test',
       phone: '081223344556',
       email: 'test@test.test',
-      alamat: 'test',
+      address: 'test',
       social_media: {
         fb: 'test',
         x: 'test',
         ig: 'test',
       },
-      location: [0, 1],
+      longitude: 0,
+      latitude: 1,
     };
 
     // Action & Assert
@@ -57,13 +58,14 @@ describe('AddPlace entities', () => {
       name: 'test',
       phone: '+6359895897885',
       email: 'test@test.test',
-      alamat: 'test',
+      address: 'test',
       social_media: {
         fb: 'test',
         x: 'test',
         ig: 'test',
       },
-      location: [0, 1],
+      longitude: 0,
+      latitude: 1,
     };
 
     // Action & Assert
@@ -81,42 +83,19 @@ describe('AddPlace entities', () => {
       name: 'test',
       phone: '081223344556',
       email: 'test.test',
-      alamat: 'test',
+      address: 'test',
       social_media: {
         fb: 'test',
         x: 'test',
         ig: 'test',
       },
-      location: [0, 1],
+      longitude: 0,
+      latitude: 1,
     };
 
     // Action & Assert
     expect(() => new AddPlace(payload)).toThrowError(
       'ADD_PLACE.EMAIL_IS_NOT_VALID',
-    );
-  });
-
-  it('should throw error when email is not valid', () => {
-    // Arrange
-    const payload = {
-      user_id: 'test',
-      category_id: 'test',
-      thumbnail: '123',
-      name: 'test',
-      phone: '081223344556',
-      email: 'test@test.test',
-      alamat: 'test',
-      social_media: {
-        fb: 'test',
-        x: 'test',
-        ig: 'test',
-      },
-      location: [0, 1, 2],
-    };
-
-    // Action & Assert
-    expect(() => new AddPlace(payload)).toThrowError(
-      'ADD_PLACE.LOCATION_IS_NOT_VALID',
     );
   });
 
@@ -129,13 +108,14 @@ describe('AddPlace entities', () => {
       name: 'test',
       phone: '081223344556',
       email: 'test@test.test',
-      alamat: 'test',
+      address: 'test',
       social_media: {
         fb: 'test',
         x: 'test',
         ig: 'test',
       },
-      location: [0, 1],
+      longitude: 0,
+      latitude: 1,
     };
 
     // Action
@@ -143,13 +123,13 @@ describe('AddPlace entities', () => {
 
     // Assert
     expect(place).toBeInstanceOf(AddPlace);
-    expect(place.id).toEqual(payload.id);
+    expect(place.user_id).toEqual(payload.user_id);
     expect(place.category_id).toEqual(payload.category_id);
     expect(place.thumbnail).toEqual(payload.thumbnail);
     expect(place.name).toEqual(payload.name);
     expect(place.phone).toEqual(payload.phone);
     expect(place.email).toEqual(payload.email);
-    expect(place.alamat).toEqual(payload.alamat);
+    expect(place.address).toEqual(payload.address);
     expect(place.social_media).toEqual(payload.social_media);
   });
 });

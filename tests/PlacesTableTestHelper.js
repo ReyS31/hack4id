@@ -15,7 +15,7 @@ const PlacesTableTestHelper = {
       fb: 'test',
       ig: 'test',
     },
-    location = [-0.4628685, 117.1445472],
+    location = [117.1445472, -0.4628685],
     created_at = '2023-10-02 11:44:28.719882+00',
   }) {
     const query = {
@@ -29,7 +29,7 @@ const PlacesTableTestHelper = {
         $6,
         $7,
         $8,
-        $9::json,
+        $9,
         $10,
         $11
       )`,
@@ -42,8 +42,8 @@ const PlacesTableTestHelper = {
         phone,
         email,
         address,
-        JSON.stringify(social_media),
-        `POINT(${location.join(' ')})`,
+        social_media,
+        `SRID=4326;POINT(${location.join(' ')})`,
         created_at,
       ],
     };
