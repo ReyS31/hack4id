@@ -38,8 +38,6 @@ class AddPlace {
       || !category_id
       || !thumbnail
       || !name
-      || !phone
-      || !email
       || !address
       || latitude === undefined
       || longitude === undefined
@@ -52,8 +50,6 @@ class AddPlace {
       || typeof category_id !== 'string'
       || typeof thumbnail !== 'string'
       || typeof name !== 'string'
-      || typeof phone !== 'string'
-      || typeof email !== 'string'
       || typeof address !== 'string'
       || typeof latitude !== 'number'
       || typeof longitude !== 'number'
@@ -61,11 +57,11 @@ class AddPlace {
       throw new Error('ADD_PLACE.NOT_MEET_DATA_TYPE_SPECIFICATION');
     }
 
-    if (!validatePhone(phone)) {
+    if (typeof phone === 'string' && !validatePhone(phone)) {
       throw new Error('ADD_PLACE.PHONE_IS_NOT_VALID');
     }
 
-    if (!validateEmail(email)) {
+    if (typeof email === 'string' && !validateEmail(email)) {
       throw new Error('ADD_PLACE.EMAIL_IS_NOT_VALID');
     }
   }

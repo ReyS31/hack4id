@@ -24,14 +24,17 @@ class CategoryRepositoryPostgres extends CategoryRepository {
 
   async addCategory(addCategory) {
     const id = this._idGenerator();
+    const created_at = new Date().toUTCString();
     const { name, icon } = addCategory;
 
     const query = {
-      text: 'INSERT INTO categories VALUES($1, $2, $3)',
-      value: [id, name, icon],
+      text: 'INSERT INTO categories VALUES($1, $2, $3, $4) RETURNING id',
+      values: [id, name, icon, created_at],
     };
 
-    await this._pool.query(query);
+    const result = await this._pool.query(query);
+
+    return result.rows[0].id;
   }
 
   async updateCategory(id, updateCategory) {

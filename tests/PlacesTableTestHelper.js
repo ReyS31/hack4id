@@ -61,6 +61,15 @@ const PlacesTableTestHelper = {
     return result.rows;
   },
 
+  async count() {
+    const query = {
+      text: 'SELECT count(id) as count FROM places',
+    };
+
+    const result = await pool.query(query);
+    return result.rows[0].count;
+  },
+
   async deletePlace(id) {
     const query = {
       text: 'DELETE FROM places WHERE id=$1',

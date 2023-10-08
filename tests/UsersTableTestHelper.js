@@ -39,6 +39,24 @@ const UsersTableTestHelper = {
   async cleanTable() {
     await pool.query('DELETE FROM users WHERE 1=1');
   },
+
+  async addAdmin({
+    id = '00000000-0000-0000-0000-000000000000',
+    name = 'Admin',
+    phone,
+    email,
+    password,
+    created_at,
+  }) {
+    const query = {
+      text: 'INSERT INTO users VALUES($1, $2, $3, $4, $5, $6) returning id',
+      values: [id, name, phone, email, password, created_at],
+    };
+
+    const result = await pool.query(query);
+
+    return result.rows[0].id;
+  },
 };
 
 module.exports = UsersTableTestHelper;

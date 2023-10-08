@@ -27,13 +27,9 @@ exports.up = (pgm) => {
     },
     phone: {
       type: 'VARCHAR(50)',
-      notNull: true,
-      unique: true,
     },
     email: {
       type: 'VARCHAR(50)',
-      notNull: true,
-      unique: true,
     },
     address: {
       type: 'TEXT',

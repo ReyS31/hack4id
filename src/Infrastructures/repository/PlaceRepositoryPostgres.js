@@ -68,14 +68,12 @@ class PlaceRepositoryPostgres extends PlaceRepository {
     cols += ')';
     valuesQuery += ')';
 
-    const text = `INSERT INTO places${cols} VALUES${valuesQuery} returning created_at`;
-
+    const text = `INSERT INTO places${cols} VALUES${valuesQuery}`;
     const query = {
       text,
       values,
     };
-
-    await this._pool.query(query);
+    return this._pool.query(query);
   }
 
   async updatePlace(id, updatePlace) {
