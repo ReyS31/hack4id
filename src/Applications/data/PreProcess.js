@@ -1,6 +1,7 @@
 const fs = require('fs').promises;
 
 const UsersTableTestHelper = require('../../../tests/UsersTableTestHelper');
+const capitalize = require('../../Commons/utils/capitalize');
 
 const AddCategory = require('../../Domains/categories/entities/AddCategory');
 const AddPlace = require('../../Domains/places/entities/AddPlace');
@@ -12,9 +13,7 @@ class PreProcess {
     this._passwordHash = passwordHash;
   }
 
-  async insertAdmin({
-    name, phone, email, password,
-  }) {
+  async insertAdmin({ name, phone, email, password }) {
     const hashedPassword = await this._passwordHash.hash(password);
     return UsersTableTestHelper.addAdmin({
       name,
@@ -29,10 +28,12 @@ class PreProcess {
     let promises = [];
     const SAMPLE_DIR = `${__dirname}/samples`;
     const dir = await fs.readdir(SAMPLE_DIR);
-    const filteredCategory = dir.filter((file) => file.includes('_categories.json'));
+    const filteredCategory = dir.filter((file) =>
+      file.includes('_categories.json'),
+    );
     filteredCategory.forEach(async (file) => {
       const prefix = file.split('_')[0];
-      if (prefix !== 'ibadah') {
+      if (prefix === 'pariwisata') {
         const categories = JSON.parse(
           (await fs.readFile(`${SAMPLE_DIR}/${file}`)).toString(),
         );
@@ -70,8 +71,8 @@ class PreProcess {
       } else {
         const category_id = await this._categoryRepository.addCategory(
           new AddCategory({
-            name: 'Ibadah',
-            icon: 'ibadah',
+            name: capitalize(prefix),
+            icon: prefix,
           }),
         );
         const data = JSON.parse(
@@ -82,7 +83,7 @@ class PreProcess {
           const addPlace = new AddPlace({
             user_id: adminId,
             category_id,
-            thumbnail: 'test',
+            thumbnail: datum.foto ?? 'test',
             name: datum.nama,
             address: datum.alamat,
             latitude: Number(datum.latitude),

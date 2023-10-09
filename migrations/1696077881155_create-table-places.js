@@ -39,7 +39,7 @@ exports.up = (pgm) => {
       type: 'JSON',
     },
     location: {
-      type: 'GEOMETRY',
+      type: 'geography(POINT,4326)',
       notNull: true,
     },
     created_at: {

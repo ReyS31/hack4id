@@ -7,8 +7,8 @@ class PlaceMini {
     this.category = payload.category;
     this.thumbnail = payload.thumbnail;
     this.name = payload.name;
-    this.alamat = payload.alamat;
-    this.location = payload.location;
+    this.address = payload.address;
+    this.distance = payload.distance;
   }
 
   #verifyPayload(payload) {
@@ -17,7 +17,7 @@ class PlaceMini {
       category,
       name,
       thumbnail,
-      alamat,
+      address,
     } = payload;
 
     if (
@@ -25,7 +25,7 @@ class PlaceMini {
       || !category
       || !name
       || !thumbnail
-      || !alamat
+      || !address
     ) {
       throw new Error('PLACE_MINI.NOT_CONTAIN_NEEDED_PROPERTY');
     }
@@ -35,7 +35,7 @@ class PlaceMini {
       || typeof category !== 'string'
       || typeof name !== 'string'
       || typeof thumbnail !== 'string'
-      || typeof alamat !== 'string'
+      || typeof address !== 'string'
     ) {
       throw new Error('PLACE_MINI.NOT_MEET_DATA_TYPE_SPECIFICATION');
     }

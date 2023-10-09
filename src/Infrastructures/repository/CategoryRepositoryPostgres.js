@@ -22,6 +22,17 @@ class CategoryRepositoryPostgres extends CategoryRepository {
     }
   }
 
+  async getCategories() {
+    const query = {
+      text: 'SELECT * FROM categories',
+      values: [],
+    };
+
+    const result = await this._pool.query(query);
+
+    return result.rows;
+  }
+
   async addCategory(addCategory) {
     const id = this._idGenerator();
     const created_at = new Date().toUTCString();

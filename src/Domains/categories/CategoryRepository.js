@@ -4,6 +4,10 @@ class CategoryRepository {
     throw new Error('CATEGORY_REPOSITORY.METHOD_NOT_IMPLEMENTED');
   }
 
+  async getCategories() {
+    throw new Error('CATEGORY_REPOSITORY.METHOD_NOT_IMPLEMENTED');
+  }
+
   async checkAvailabilityName(name) {
     throw new Error('CATEGORY_REPOSITORY.METHOD_NOT_IMPLEMENTED');
   }

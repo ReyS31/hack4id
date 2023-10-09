@@ -27,6 +27,8 @@ const AuthenticationRepository = require('../Domains/authentications/Authenticat
 const AuthenticationRepositoryPostgres = require('./repository/AuthenticationRepositoryPostgres');
 const LogoutUserUseCase = require('../Applications/use_case/LogoutUserUseCase');
 const RefreshAuthenticationUseCase = require('../Applications/use_case/RefreshAuthenticationUseCase');
+const PaginatePlaceUseCase = require('../Applications/use_case/PaginatePlaceUseCase');
+const GetCategoriesUseCase = require('../Applications/use_case/GetCategoriesUseCase');
 
 // creating container
 const container = createContainer();
@@ -180,6 +182,32 @@ container.register([
         {
           name: 'authenticationTokenManager',
           internal: AuthenticationTokenManager.name,
+        },
+      ],
+    },
+  },
+  {
+    key: PaginatePlaceUseCase.name,
+    Class: PaginatePlaceUseCase,
+    parameter: {
+      injectType: 'destructuring',
+      dependencies: [
+        {
+          name: 'placeRepository',
+          internal: PlaceRepository.name,
+        },
+      ],
+    },
+  },
+  {
+    key: GetCategoriesUseCase.name,
+    Class: GetCategoriesUseCase,
+    parameter: {
+      injectType: 'destructuring',
+      dependencies: [
+        {
+          name: 'categoryRepository',
+          internal: CategoryRepository.name,
         },
       ],
     },

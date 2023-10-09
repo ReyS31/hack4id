@@ -11,35 +11,49 @@ class PlaceRepositoryPostgres extends PlaceRepository {
 
   async pagination(placeQuery) {
     const {
-      name, lat, long, page,
+      name, lat, long, page, category,
     } = placeQuery;
     let textQuery = `SELECT 
-    pl.id, ctg.name as category, pl.name, pl.thumbnail, pl.address, ST_AsGeoJSON(pl.location)::json as location
+    pl.id, ctg.name as category, pl.name, pl.thumbnail, pl.address,
+    ST_AsGeoJSON(pl.location)::json as location,
+    ST_Distance(
+      pl.location,
+      ST_SetSRID(ST_MakePoint($1, $2),4326)::geography 
+    ) as distance
     FROM places as pl 
     JOIN categories as ctg 
     ON
     pl.category_id = ctg.id
-    WHERE 
-    ST_Distance(
-      ST_Transform(pl.location, 3857),
-      ST_Transform('SRID=4326;POINT(${long} ${lat})'::geometry, 3857)
-    ) < 2500
     `;
-    const valueQuery = [lat, long];
-
+    const valueQuery = [long, lat];
+    let i = 2;
     if (name) {
-      textQuery += ' AND pl.name LIKE "$3%" ';
-      valueQuery.push(name);
+      i++;
+      textQuery += ` WHERE AND pl.name LIKE $${i} `;
+      valueQuery.push(`${name}%`);
+    }
+
+    if (category) {
+      i++;
+      if (i === 3) {
+        textQuery += ' WHERE';
+      } else {
+        textQuery += ' AND';
+      }
+      textQuery += ` ctg.icon = $${i}`;
+      valueQuery.push(category);
     }
 
     const offsetPosition = 25 * (Number(page) - 1);
     const limit = 25;
-    textQuery += ` LIMIT ${limit} OFFSET ${offsetPosition}`;
+    textQuery += ` ORDER BY ST_Distance(
+      pl.location,
+      ST_SetSRID(ST_MakePoint($1, $2),4326)::geography 
+    ) ASC LIMIT ${limit} OFFSET ${offsetPosition}`;
     const query = {
       text: textQuery,
-      values: [],
+      values: valueQuery,
     };
-
     const result = await this._pool.query(query);
 
     return result.rows;

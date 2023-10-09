@@ -1,0 +1,54 @@
+[
+    {
+        "uuid": "65008a30-cca0-11e8-9621-0f12a0b6e709",
+        "nama": "Pertokoan Amplang, Jajanan Khas Samarinda",
+        "slug": "pertokoan-amplang-jajanan-khas-samarinda",
+        "foto": "https://disdag.samarindakota.go.id/storage/PIHPS/Pasar/2018-10/10/pertokoan-amplang-jajanan-khas-samarinda.jpg",
+        "alamat": "Jl. P Antasari, Tlk. Lerong Ulu, Samarinda Ulu, Kota Samarinda, Kalimantan Timur",
+        "keterangan": null,
+        "telepon": "-",
+        "kecamatan": "Sungai Kunjang",
+        "kelurahan": "Teluk Lerong Ulu",
+        "longitude": "117.12714314460754",
+        "latitude": "-0.49995741568030655"
+    },
+    {
+        "uuid": "45558330-cc51-11e8-8776-29d900b5f7f0",
+        "nama": "Desa Budaya Pampang",
+        "slug": "desa-budaya-pampang",
+        "foto": "https://disdag.samarindakota.go.id/storage/PIHPS/Pasar/2018-10/10/desa-budaya-pampang.jpg",
+        "alamat": "Jl. Dahlia No. 69, Sungai Siring, Samarinda Ulu, Sungai Siring, Samarinda Utara, Kota Samarinda, Kalimantan Timur",
+        "keterangan": null,
+        "telepon": "(0541) 748520",
+        "kecamatan": "Samarinda Utara",
+        "kelurahan": "Sungai Siring",
+        "longitude": "117.2301721572876",
+        "latitude": "-0.3775235515179563"
+    },
+    {
+        "uuid": "f3f03bf0-cc4a-11e8-abbf-d5c6db730787",
+        "nama": "Kampung Tenun Cagar Budaya Kalimantan Timur",
+        "slug": "kampung-tenun-cagar-budaya-kalimantan-timur",
+        "foto": "https://disdag.samarindakota.go.id/storage/PIHPS/Pasar/2018-10/10/kampung-tenun-cagar-budaya-kalimantan-timur.jpg",
+        "alamat": "jalan pertenunan, Jl. Hos Cokro Aminoto, Rapak Dalam, Samarinda Seberang, Kota Samarinda, Kalimantan Timur",
+        "keterangan": null,
+        "telepon": "-",
+        "kecamatan": "Loa Janan Ilir",
+        "kelurahan": "Rapak Dalam",
+        "longitude": "117.14728116989136",
+        "latitude": "-0.510943316293003"
+    },
+    {
+        "uuid": "4d5203e0-cb30-11e8-a0d8-ebbaef82eafa",
+        "nama": "Citra Niaga",
+        "slug": "citra-niaga",
+        "foto": "https://disdag.samarindakota.go.id/storage/PIHPS/Pasar/2018-10/10/citra-niaga.jpg",
+        "alamat": "JL. Niaga Selatan, Pelabuhan, Samarinda Kota, Samarinda City, East Kalimantan",
+        "keterangan": null,
+        "telepon": "(0541) 732369",
+        "kecamatan": "Samarinda Kota",
+        "kelurahan": "Pelabuhan",
+        "longitude": "117.14985828430792",
+        "latitude": "-0.5035482473605956"
+    }
+]
