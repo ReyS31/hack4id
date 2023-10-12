@@ -29,6 +29,7 @@ const LogoutUserUseCase = require('../Applications/use_case/LogoutUserUseCase');
 const RefreshAuthenticationUseCase = require('../Applications/use_case/RefreshAuthenticationUseCase');
 const PaginatePlaceUseCase = require('../Applications/use_case/PaginatePlaceUseCase');
 const GetCategoriesUseCase = require('../Applications/use_case/GetCategoriesUseCase');
+const GetPlaceUseCase = require('../Applications/use_case/GetPlaceUseCase');
 
 // creating container
 const container = createContainer();
@@ -208,6 +209,19 @@ container.register([
         {
           name: 'categoryRepository',
           internal: CategoryRepository.name,
+        },
+      ],
+    },
+  },
+  {
+    key: GetPlaceUseCase.name,
+    Class: GetPlaceUseCase,
+    parameter: {
+      injectType: 'destructuring',
+      dependencies: [
+        {
+          name: 'placeRepository',
+          internal: PlaceRepository.name,
         },
       ],
     },

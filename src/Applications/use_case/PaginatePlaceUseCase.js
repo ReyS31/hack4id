@@ -10,16 +10,15 @@ class PaginatePlaceUseCase {
     const placeQuery = new PlaceQuery(useCasePayload);
     const raw = await this._placeRepository.pagination(placeQuery);
     const geo = [];
-    const places = [];
-    raw.forEach((datum) => {
+    const places = raw.places.map((datum) => {
       const clean = new PlaceMini(datum);
-      places.push(clean);
       const geoJson = datum.location;
       geoJson.properties = clean;
       geo.push(geoJson);
-    });
 
-    return { places, geo };
+      return clean;
+    });
+    return { places, geo, total: raw.count };
   }
 }
 

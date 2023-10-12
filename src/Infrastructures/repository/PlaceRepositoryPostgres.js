@@ -13,6 +13,11 @@ class PlaceRepositoryPostgres extends PlaceRepository {
     const {
       name, lat, long, page, category,
     } = placeQuery;
+
+    let countQuery = `SELECT COUNT(pl.id) FROM places as pl 
+    JOIN categories as ctg 
+    ON
+    pl.category_id = ctg.id`;
     let textQuery = `SELECT 
     pl.id, ctg.name as category, pl.name, pl.thumbnail, pl.address,
     ST_AsGeoJSON(pl.location)::json as location,
@@ -25,23 +30,33 @@ class PlaceRepositoryPostgres extends PlaceRepository {
     ON
     pl.category_id = ctg.id
     `;
+    const countValue = [];
     const valueQuery = [long, lat];
     let i = 2;
+    let j = 0;
     if (name) {
       i++;
+      j++;
+      const nameValue = `${name}%`;
       textQuery += ` WHERE AND pl.name LIKE $${i} `;
-      valueQuery.push(`${name}%`);
+      countQuery += ` WHERE AND pl.name LIKE $${j} `;
+      valueQuery.push(nameValue);
+      countValue.push(nameValue);
     }
 
     if (category) {
       i++;
+      j++;
+      let categoryQuery = '';
       if (i === 3) {
-        textQuery += ' WHERE';
+        categoryQuery += ' WHERE';
       } else {
-        textQuery += ' AND';
+        categoryQuery += ' AND';
       }
-      textQuery += ` ctg.icon = $${i}`;
+      textQuery += `${categoryQuery} ctg.icon = $${i}`;
+      countQuery += `${categoryQuery} ctg.icon = $${j}`;
       valueQuery.push(category);
+      countValue.push(category);
     }
 
     const offsetPosition = 25 * (Number(page) - 1);
@@ -54,9 +69,14 @@ class PlaceRepositoryPostgres extends PlaceRepository {
       text: textQuery,
       values: valueQuery,
     };
-    const result = await this._pool.query(query);
 
-    return result.rows;
+    const result = await this._pool.query(query);
+    const countRes = await this._pool.query({
+      text: countQuery,
+      values: countValue,
+    });
+
+    return { places: result.rows, ...countRes.rows[0] };
   }
 
   async addPlace(addPlace) {
@@ -142,6 +162,7 @@ class PlaceRepositoryPostgres extends PlaceRepository {
     if (!result.rowCount) {
       throw new InvariantError('tempat tidak ditemukan');
     }
+
     return new Place(result.rows[0]);
   }
 

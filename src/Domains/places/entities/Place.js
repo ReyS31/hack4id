@@ -19,22 +19,10 @@ class Place {
       category_id,
       name,
       thumbnail,
-      phone,
-      email,
       address,
-      social_media,
     } = payload;
 
-    if (
-      !id
-      || !category_id
-      || !name
-      || !thumbnail
-      || !phone
-      || !email
-      || !address
-      || !social_media
-    ) {
+    if (!id || !category_id || !name || !thumbnail || !address) {
       throw new Error('PLACE.NOT_CONTAIN_NEEDED_PROPERTY');
     }
 
@@ -43,10 +31,7 @@ class Place {
       || typeof category_id !== 'string'
       || typeof name !== 'string'
       || typeof thumbnail !== 'string'
-      || typeof phone !== 'string'
-      || typeof email !== 'string'
       || typeof address !== 'string'
-      || typeof social_media !== 'object'
     ) {
       throw new Error('PLACE.NOT_MEET_DATA_TYPE_SPECIFICATION');
     }
