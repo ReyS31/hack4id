@@ -4,6 +4,7 @@ const authentications = require('../../Interfaces/http/api/authentications');
 const users = require('../../Interfaces/http/api/users');
 const places = require('../../Interfaces/http/api/places');
 const categories = require('../../Interfaces/http/api/categories');
+const ClientError = require('../../Commons/exceptions/ClientError');
 
 const app = express();
 
@@ -35,6 +36,21 @@ module.exports = async (container) => {
     res.status(404).send({
       status: 'fail',
       message: 'NOT FOUND',
+    });
+  });
+
+  // eslint-disable-next-line no-unused-vars
+  app.use((err, _, response, __) => {
+    if (err instanceof ClientError) {
+      return response.status(err.statusCode).send({
+        status: 'fail',
+        message: err.message,
+      });
+    }
+
+    return response.status(500).send({
+      status: 'fail',
+      message: err.message,
     });
   });
 

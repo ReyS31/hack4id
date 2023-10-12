@@ -1,3 +1,4 @@
+/* eslint-disable consistent-return */
 const express = require('express');
 const GetCategoriesUseCase = require('../../../Applications/use_case/GetCategoriesUseCase');
 
@@ -8,15 +9,19 @@ class CategoriesHandler {
     this.getCategoriesHandler = this.getCategoriesHandler.bind(this);
   }
 
-  async getCategoriesHandler(_, response) {
-    const getCategoriesUseCase = this._container.getInstance(
-      GetCategoriesUseCase.name,
-    );
-    const data = await getCategoriesUseCase.execute();
-    return response.send({
-      status: 'success',
-      data,
-    });
+  async getCategoriesHandler(_, response, next) {
+    try {
+      const getCategoriesUseCase = this._container.getInstance(
+        GetCategoriesUseCase.name,
+      );
+      const data = await getCategoriesUseCase.execute();
+      return response.send({
+        status: 'success',
+        data,
+      });
+    } catch (error) {
+      next(error);
+    }
   }
 }
 

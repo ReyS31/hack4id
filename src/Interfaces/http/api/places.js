@@ -1,3 +1,4 @@
+/* eslint-disable consistent-return */
 const express = require('express');
 const PaginatePlaceUseCase = require('../../../Applications/use_case/PaginatePlaceUseCase');
 const GetPlaceUseCase = require('../../../Applications/use_case/GetPlaceUseCase');
@@ -10,25 +11,35 @@ class PlacesHandler {
     this.getPlaceHandler = this.getPlaceHandler.bind(this);
   }
 
-  async getPlacesHandler(request, response) {
-    const getPlacesUseCase = this._container.getInstance(
-      PaginatePlaceUseCase.name,
-    );
-    const data = await getPlacesUseCase.execute(request.query);
-    return response.send({
-      status: 'success',
-      data,
-    });
+  async getPlacesHandler(request, response, next) {
+    try {
+      const getPlacesUseCase = this._container.getInstance(
+        PaginatePlaceUseCase.name,
+      );
+      const data = await getPlacesUseCase.execute(request.query);
+      return response.send({
+        status: 'success',
+        data,
+      });
+    } catch (error) {
+      next(error);
+    }
   }
 
-  async getPlaceHandler(request, response) {
-    const { id } = request.params;
-    const getPlacesUseCase = this._container.getInstance(GetPlaceUseCase.name);
-    const data = await getPlacesUseCase.execute(id);
-    return response.send({
-      status: 'success',
-      data,
-    });
+  async getPlaceHandler(request, response, next) {
+    try {
+      const { id } = request.params;
+      const getPlacesUseCase = this._container.getInstance(
+        GetPlaceUseCase.name,
+      );
+      const data = await getPlacesUseCase.execute(id);
+      return response.send({
+        status: 'success',
+        data,
+      });
+    } catch (error) {
+      next(error);
+    }
   }
 }
 

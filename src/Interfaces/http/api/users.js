@@ -1,3 +1,4 @@
+/* eslint-disable consistent-return */
 const express = require('express');
 const AddUserUseCase = require('../../../Applications/use_case/AddUserUseCase');
 
@@ -8,18 +9,22 @@ class UsersHandler {
     this.postUserHandler = this.postUserHandler.bind(this);
   }
 
-  async postUserHandler(request, response) {
-    const addUserUseCase = this._container.getInstance(AddUserUseCase.name);
-    const addedUser = await addUserUseCase.execute(request.payload);
+  async postUserHandler(request, response, next) {
+    try {
+      const addUserUseCase = this._container.getInstance(AddUserUseCase.name);
+      const addedUser = await addUserUseCase.execute(request.payload);
 
-    return response
-      .send({
-        status: 'success',
-        data: {
-          addedUser,
-        },
-      })
-      .status(201);
+      return response
+        .send({
+          status: 'success',
+          data: {
+            addedUser,
+          },
+        })
+        .status(201);
+    } catch (error) {
+      next(error);
+    }
   }
 }
 
