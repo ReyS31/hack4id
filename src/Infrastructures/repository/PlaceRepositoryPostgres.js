@@ -59,8 +59,8 @@ class PlaceRepositoryPostgres extends PlaceRepository {
       countValue.push(category);
     }
 
-    const offsetPosition = 25 * (Number(page) - 1);
     const limit = 25;
+    const offsetPosition = limit * (Number(page) - 1);
     textQuery += ` ORDER BY ST_Distance(
       pl.location,
       ST_SetSRID(ST_MakePoint($1, $2),4326)::geography 
