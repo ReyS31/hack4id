@@ -27,8 +27,8 @@ module.exports = async (container) => {
     });
   });
 
-  app.use(authentications(container));
-  app.use(users(container));
+  app.use('/authentications', authentications(container));
+  app.use('/users', users(container));
   app.use('/categories', categories(container));
   app.use('/places', places(container));
 

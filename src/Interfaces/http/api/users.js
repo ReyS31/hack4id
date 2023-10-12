@@ -32,7 +32,7 @@ module.exports = (container) => {
   const router = express.Router();
   const handler = new UsersHandler(container);
 
-  router.post('/users', handler.postUserHandler);
+  router.post('/', handler.postUserHandler);
 
   return router;
 };
