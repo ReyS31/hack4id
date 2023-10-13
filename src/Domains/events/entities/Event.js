@@ -7,6 +7,8 @@ class Event {
     this.thumbnail = payload.thumbnail;
     this.title = payload.title;
     this.body = payload.body;
+    this.pinned = payload.pinned ?? false;
+    this.views = payload.views;
     this.created_at = payload.created_at;
   }
 

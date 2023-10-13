@@ -6,6 +6,8 @@ class EventMini {
     this.place_id = payload.place_id;
     this.thumbnail = payload.thumbnail;
     this.title = payload.title;
+    this.views = payload.views;
+    this.pinned = payload.pinned ?? false;
     this.created_at = payload.created_at;
   }
 

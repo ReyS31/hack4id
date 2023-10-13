@@ -5,6 +5,7 @@ const users = require('../../Interfaces/http/api/users');
 const places = require('../../Interfaces/http/api/places');
 const categories = require('../../Interfaces/http/api/categories');
 const ClientError = require('../../Commons/exceptions/ClientError');
+const events = require('../../Interfaces/http/api/events');
 
 const app = express();
 
@@ -31,6 +32,7 @@ module.exports = async (container) => {
   app.use('/users', users(container));
   app.use('/categories', categories(container));
   app.use('/places', places(container));
+  app.use('/events', events(container));
 
   app.use((_, res) => {
     res.status(404).send({

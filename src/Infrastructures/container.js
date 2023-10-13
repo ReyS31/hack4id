@@ -17,6 +17,8 @@ const PlaceRepository = require('../Domains/places/PlaceRepository');
 const PlaceRepositoryPostgres = require('./repository/PlaceRepositoryPostgres');
 const CategoryRepository = require('../Domains/categories/CategoryRepository');
 const CategoryRepositoryPostgres = require('./repository/CategoryRepositoryPostgres');
+const EventRepository = require('../Domains/events/EventRepository');
+const EventRepositoryPostgress = require('./repository/EventRepositoryPostgress');
 
 // use case
 const AddUserUseCase = require('../Applications/use_case/AddUserUseCase');
@@ -30,6 +32,7 @@ const RefreshAuthenticationUseCase = require('../Applications/use_case/RefreshAu
 const PaginatePlaceUseCase = require('../Applications/use_case/PaginatePlaceUseCase');
 const GetCategoriesUseCase = require('../Applications/use_case/GetCategoriesUseCase');
 const GetPlaceUseCase = require('../Applications/use_case/GetPlaceUseCase');
+const PaginateEventUseCase = require('../Applications/use_case/PaginateEventUseCase');
 
 // creating container
 const container = createContainer();
@@ -100,6 +103,20 @@ container.register([
   {
     key: PlaceRepository.name,
     Class: PlaceRepositoryPostgres,
+    parameter: {
+      dependencies: [
+        {
+          concrete: pool,
+        },
+        {
+          concrete: uuidv4,
+        },
+      ],
+    },
+  },
+  {
+    key: EventRepository.name,
+    Class: EventRepositoryPostgress,
     parameter: {
       dependencies: [
         {
@@ -222,6 +239,18 @@ container.register([
         {
           name: 'placeRepository',
           internal: PlaceRepository.name,
+        },
+      ],
+    },
+  }, {
+    key: PaginateEventUseCase.name,
+    Class: PaginateEventUseCase,
+    parameter: {
+      injectType: 'destructuring',
+      dependencies: [
+        {
+          name: 'eventRepository',
+          internal: EventRepository.name,
         },
       ],
     },

@@ -42,6 +42,13 @@ exports.up = (pgm) => {
       type: 'geography(POINT,4326)',
       notNull: true,
     },
+    pinned: {
+      type: "BOOLEAN",
+      default: false
+    },
+    pinnedUntil: {
+      type: 'TIMESTAMPTZ',
+    },
     created_at: {
       type: 'TIMESTAMPTZ',
       default: pgm.func('Now()'),

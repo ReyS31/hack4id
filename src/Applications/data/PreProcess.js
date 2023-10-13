@@ -4,16 +4,20 @@ const UsersTableTestHelper = require('../../../tests/UsersTableTestHelper');
 const capitalize = require('../../Commons/utils/capitalize');
 
 const AddCategory = require('../../Domains/categories/entities/AddCategory');
+const AddEvent = require('../../Domains/events/entities/AddEvent');
 const AddPlace = require('../../Domains/places/entities/AddPlace');
 
 class PreProcess {
-  constructor(categoryRepository, placeRepository, passwordHash) {
+  constructor(eventRepository, categoryRepository, placeRepository, passwordHash) {
+    this._eventRepository = eventRepository;
     this._categoryRepository = categoryRepository;
     this._placeRepository = placeRepository;
     this._passwordHash = passwordHash;
   }
 
-  async insertAdmin({ name, phone, email, password }) {
+  async insertAdmin({
+    name, phone, email, password,
+  }) {
     const hashedPassword = await this._passwordHash.hash(password);
     return UsersTableTestHelper.addAdmin({
       name,
@@ -28,10 +32,8 @@ class PreProcess {
     let promises = [];
     const SAMPLE_DIR = `${__dirname}/samples`;
     const dir = await fs.readdir(SAMPLE_DIR);
-    const filteredCategory = dir.filter((file) =>
-      file.includes('_categories.json'),
-    );
-    filteredCategory.forEach(async (file) => {
+    const filteredCategory = dir.filter((file) => file.includes('_categories.json'));
+    filteredCategory.filter((f) => !f.includes('ibadah')).forEach(async (file) => {
       const prefix = file.split('_')[0];
       if (prefix === 'pariwisata') {
         const categories = JSON.parse(
@@ -94,6 +96,27 @@ class PreProcess {
         });
         promises = [promises, ...prms];
       }
+    });
+
+    return promises;
+  }
+
+  async insertEventToDatabase(adminId) {
+    let promises = [];
+    const SAMPLE_DIR = `${__dirname}/event_samples`;
+    const dir = await fs.readdir(SAMPLE_DIR);
+    dir.forEach(async (file) => {
+      const events = JSON.parse(
+        (await fs.readFile(`${SAMPLE_DIR}/${file}`)).toString(),
+      );
+
+      const prms = events.map((event) => {
+        const addEvent = new AddEvent({ user_id: adminId, ...event });
+
+        return this._eventRepository.addEvent(addEvent);
+      });
+
+      promises = [promises, ...prms];
     });
 
     return promises;

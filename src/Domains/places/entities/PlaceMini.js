@@ -9,6 +9,7 @@ class PlaceMini {
     this.name = payload.name;
     this.address = payload.address;
     this.distance = payload.distance;
+    this.pinned = payload.pinned ?? false;
   }
 
   #verifyPayload(payload) {

@@ -3,7 +3,7 @@
 exports.shorthands = undefined;
 
 exports.up = (pgm) => {
-  pgm.createTable('events', {
+  pgm.createTable('payments', {
     id: {
       type: 'UUID',
       primaryKey: true,
@@ -13,30 +13,14 @@ exports.up = (pgm) => {
       type: 'UUID',
       notNull: true,
     },
-    thumbnail: {
-      type: 'TEXT',
+    dyn_id: {
+      type: 'UUID',
       notNull: true,
     },
-    title: {
-      type: 'TEXT',
-      notNull: true,
-    },
-    preview: {
-      type: 'TEXT',
-    },
-    body: {
-      type: 'TEXT',
-      notNull: true,
-    },
-    views: {
+    total: {
       type: 'INTEGER',
-      default: 0,
     },
-    pinned: {
-      type: 'BOOLEAN',
-      default: false,
-    },
-    pinnedUntil: {
+    unpin_at: {
       type: 'TIMESTAMPTZ',
     },
     created_at: {
@@ -46,12 +30,19 @@ exports.up = (pgm) => {
   });
 
   pgm.addConstraint(
-    'events',
-    'fk_events.user.id',
-    'FOREIGN KEY(user_id) REFERENCES users(id) ON DELETE CASCADE',
+    'payments',
+    'fk_payments.user.id',
+    'FOREIGN KEY(user_id) REFERENCES users(id)',
+  );
+
+  pgm.createIndex(
+    'payments',
+    'dyn_id',
   );
 };
 
 exports.down = (pgm) => {
-  pgm.dropTable('events');
+  pgm.dropTable('payments', {
+    ifExists: true,
+  });
 };

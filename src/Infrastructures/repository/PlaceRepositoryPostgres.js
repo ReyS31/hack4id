@@ -24,7 +24,8 @@ class PlaceRepositoryPostgres extends PlaceRepository {
     ST_Distance(
       pl.location,
       ST_SetSRID(ST_MakePoint($1, $2),4326)::geography 
-    ) as distance
+    ) as distance,
+    pl.pinned
     FROM places as pl 
     JOIN categories as ctg 
     ON
@@ -76,7 +77,25 @@ class PlaceRepositoryPostgres extends PlaceRepository {
       values: countValue,
     });
 
-    return { places: result.rows, ...countRes.rows[0] };
+    const pinnedQuery = `SELECT 
+    pl.id, ctg.name as category, pl.name, pl.thumbnail, pl.address,
+    ST_AsGeoJSON(pl.location)::json as location,
+    ST_Distance(
+      pl.location,
+      ST_SetSRID(ST_MakePoint($1, $2),4326)::geography 
+    ) as distance,
+    pl.pinned
+    FROM places as pl 
+    JOIN categories as ctg 
+    ON
+    pl.category_id = ctg.id WHERE pl.pinned = true`;
+
+    const pinned = await this._pool.query({
+      text: pinnedQuery,
+      values: [long, lat],
+    });
+
+    return { places: [...pinned.rows, ...result.rows], ...countRes.rows[0] };
   }
 
   async addPlace(addPlace) {
