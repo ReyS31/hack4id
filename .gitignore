@@ -1,0 +1,9 @@
+.env
+*.lockb
+*lock.json
+*.log
+**/*.sql
+
+node_modules/
+db-data/
+coverage/
