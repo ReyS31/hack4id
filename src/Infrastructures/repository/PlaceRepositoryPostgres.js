@@ -237,7 +237,7 @@ class PlaceRepositoryPostgres extends PlaceRepository {
     const now = new Date().toISOString();
     const query = {
       text: 'UPDATE places SET pinned = false, pinned_until = NULL WHERE pinned_until = $1',
-      now,
+      values: [now],
     };
 
     return this._pool.query(query);

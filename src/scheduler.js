@@ -11,6 +11,6 @@ module.exports = async () => {
       await eventRepository.deactivatePin();
       await placeRepository.deactivatePin();
     },
-    1000 * 60 * 60 * 24,
+    1000 * 60,
   );
 };

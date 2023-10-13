@@ -1,16 +1,15 @@
 require('dotenv').config();
 
 const { v4 } = require('uuid');
-const bcrypt = require('bcrypt');
 const PreProcess = require('./Applications/data/PreProcess');
 const container = require('./Infrastructures/container');
 const pool = require('./Infrastructures/database/postgres/pool');
 const createServer = require('./Infrastructures/http/createServer');
 const CategoryRepositoryPostgres = require('./Infrastructures/repository/CategoryRepositoryPostgres');
 const PlaceRepositoryPostgres = require('./Infrastructures/repository/PlaceRepositoryPostgres');
-const BcryptPasswordHash = require('./Infrastructures/security/BcryptPasswordHash');
 const EventRepositoryPostgres = require('./Infrastructures/repository/EventRepositoryPostgres');
 const scheduler = require('./scheduler');
+const PasswordHash = require('./Applications/security/PasswordHash');
 
 const seeding = async () => {
   const client = await pool.connect();
@@ -19,7 +18,7 @@ const seeding = async () => {
     const eventRepository = new EventRepositoryPostgres(client, v4);
     const categoryRepository = new CategoryRepositoryPostgres(client, v4);
     const placeRepository = new PlaceRepositoryPostgres(client, v4);
-    const passwordHash = new BcryptPasswordHash(bcrypt);
+    const passwordHash = container.getInstance(PasswordHash.name);
     const preProcess = new PreProcess(
       eventRepository,
       categoryRepository,

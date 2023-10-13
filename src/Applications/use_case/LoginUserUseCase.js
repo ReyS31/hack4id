@@ -15,25 +15,25 @@ class LoginUserUseCase {
   }
 
   async execute(useCasePayload) {
-    const { username, password } = new UserLogin(useCasePayload);
+    const { email, password } = new UserLogin(useCasePayload);
 
-    const encryptedPassword = await this._userRepository.getPasswordByUsername(username);
+    const encryptedPassword = await this._userRepository.getPasswordByEmail(email);
 
     await this._passwordHash.comparePassword(password, encryptedPassword);
 
-    const id = await this._userRepository.getIdByUsername(username);
+    const id = await this._userRepository.getIdByEmail(email);
 
-    const accessToken = await this._authenticationTokenManager
-      .createAccessToken({ username, id });
-    const refreshToken = await this._authenticationTokenManager
-      .createRefreshToken({ username, id });
+    const accessToken = await this._authenticationTokenManager.createAccessToken({ email, id });
+    const refreshToken = await this._authenticationTokenManager.createRefreshToken({ email, id });
 
     const newAuthentication = new NewAuthentication({
       accessToken,
       refreshToken,
     });
 
-    await this._authenticationRepository.addToken(newAuthentication.refreshToken);
+    await this._authenticationRepository.addToken(
+      newAuthentication.refreshToken,
+    );
 
     return newAuthentication;
   }

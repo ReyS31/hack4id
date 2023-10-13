@@ -6,29 +6,13 @@ const places = require('../../Interfaces/http/api/places');
 const categories = require('../../Interfaces/http/api/categories');
 const ClientError = require('../../Commons/exceptions/ClientError');
 const events = require('../../Interfaces/http/api/events');
-const AddEventViewsUseCase = require('../../Applications/use_case/AddEventViewsUseCase');
 const payments = require('../../Interfaces/http/api/payments');
+const getClientId = require('../../Interfaces/http/middleware/getClientId');
+const auth = require('../../Interfaces/http/middleware/auth');
 
 const app = express();
 
 module.exports = async (container) => {
-  const getClientId = (req, res, next) => {
-    const splitted = req.url.split('/');
-    splitted.shift();
-    const clientId = req.headers['x-client-id'];
-
-    if (splitted.includes('events') && splitted.length > 1 && !splitted.includes('home') && clientId) {
-      const addEventViews = container.getInstance(AddEventViewsUseCase.name);
-      addEventViews.execute({
-        eventId:
-          splitted[splitted.length - 1],
-        clientId,
-      });
-    }
-    req.clientId = clientId;
-    next();
-  };
-
   app.use(express.json());
 
   if (process.env.NODE_ENV !== 'production') {
@@ -43,14 +27,14 @@ module.exports = async (container) => {
   }
 
   app.use(cors());
-  app.use(getClientId);
+  app.use(auth(container));
+  app.use(getClientId(container));
   app.get('/', (_, res) => {
     res.send({
       status: 'success',
       message: 'OK',
     });
   });
-
   app.use('/authentications', authentications(container));
   app.use('/users', users(container));
   app.use('/categories', categories(container));
