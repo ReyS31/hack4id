@@ -1,4 +1,5 @@
 .env
+*.lockb
 *lock.json
 *.log
 **/*.sql
