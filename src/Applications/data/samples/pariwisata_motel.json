@@ -1,0 +1,74 @@
+[
+    {
+        "id": 23,
+        "kelurahan": "Temindung Permai",
+        "kelompok": "Motel",
+        "nama": "Gues House",
+        "alamat": "Jl. A. Yani 010",
+        "longitude": "117.17092752456665",
+        "latitude": "-0.4692096716381629"
+    },
+    {
+        "id": 24,
+        "kelurahan": "Temindung Permai",
+        "kelompok": "Motel",
+        "nama": "Gues House",
+        "alamat": "Jl. Belatuk Rt 016",
+        "longitude": "117.17092752456665",
+        "latitude": "-0.4692096716381629"
+    },
+    {
+        "id": 25,
+        "kelurahan": "Temindung Permai",
+        "kelompok": "Motel",
+        "nama": "Gues House",
+        "alamat": "Jl. Gelatik RT 016",
+        "longitude": "117.17092752456665",
+        "latitude": "-0.4692096716381629"
+    },
+    {
+        "id": 63,
+        "kelurahan": "Sempaja Selatan",
+        "kelompok": "Motel",
+        "nama": "Meta Medika Guest House",
+        "alamat": "Jl. Wahid Hasyim",
+        "longitude": "117.14764547261393",
+        "latitude": "-0.46858966231495597"
+    },
+    {
+        "id": 64,
+        "kelurahan": "Sempaja Selatan",
+        "kelompok": "Motel",
+        "nama": "airy room Sempaja Selatan",
+        "alamat": "Jl.Pramuka 1",
+        "longitude": "117.14764547261393",
+        "latitude": "-0.46858966231495597"
+    },
+    {
+        "id": 65,
+        "kelurahan": "Sempaja Selatan",
+        "kelompok": "Motel",
+        "nama": "OYO Raudah Guest House",
+        "alamat": "Jl.Pramuka 1",
+        "longitude": "117.14764547261393",
+        "latitude": "-0.46858966231495597"
+    },
+    {
+        "id": 66,
+        "kelurahan": "Sempaja Selatan",
+        "kelompok": "Motel",
+        "nama": "Reddorrz Guest House",
+        "alamat": "Jl Pramuka 1 No.7",
+        "longitude": "117.14764547261393",
+        "latitude": "-0.46858966231495597"
+    },
+    {
+        "id": 127,
+        "kelurahan": "Karang Asam Ilir",
+        "kelompok": "Motel",
+        "nama": "OYO 90550 Good Sleep 3 Samarinda",
+        "alamat": "Jalan Teuku Umar Rt. 20",
+        "longitude": "117.11391448974611",
+        "latitude": "-0.5133035659401021"
+    }
+]

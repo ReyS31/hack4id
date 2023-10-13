@@ -1,0 +1,411 @@
+{
+    "message": "success",
+    "data": [
+        {
+            "label": "Simpang Antasari Siradj Salman",
+            "api_url": "https://diskominfo.samarindakota.go.id/api/cctv/simpang-antasari-siradj-salman",
+            "uuid": "ba1d89b0-ddc7-11ec-ab1b-7ed30a6821af",
+            "lat": null,
+            "lng": null
+        },
+        {
+            "label": "Bandara APT Pranoto",
+            "api_url": "https://diskominfo.samarindakota.go.id/api/cctv/bandara-apt-pranoto",
+            "uuid": "ba1e0a02-ddc7-11ec-8626-7ed30a6821af",
+            "lat": null,
+            "lng": null
+        },
+        {
+            "label": "Waduk Benanga",
+            "api_url": "https://diskominfo.samarindakota.go.id/api/cctv/waduk-benanga",
+            "uuid": "ba1e8f4a-ddc7-11ec-91f1-7ed30a6821af",
+            "lat": null,
+            "lng": null
+        },
+        {
+            "label": "Taman Cerdas",
+            "api_url": "https://diskominfo.samarindakota.go.id/api/cctv/taman-cerdas",
+            "uuid": "ba1ee12a-ddc7-11ec-8bac-7ed30a6821af",
+            "lat": null,
+            "lng": null
+        },
+        {
+            "label": "Simpang Perum. Kehutanan",
+            "api_url": "https://diskominfo.samarindakota.go.id/api/cctv/simpang-perum-kehutanan",
+            "uuid": "ba1f85a8-ddc7-11ec-a3c7-7ed30a6821af",
+            "lat": null,
+            "lng": null
+        },
+        {
+            "label": "Simpang SMPN 2",
+            "api_url": "https://diskominfo.samarindakota.go.id/api/cctv/simpang-smpn-2",
+            "uuid": "ba1fd0ee-ddc7-11ec-997e-7ed30a6821af",
+            "lat": "-0.49653292307791647",
+            "lng": "117.15418109101563"
+        },
+        {
+            "label": "Simpang Gn. Kapur",
+            "api_url": "https://diskominfo.samarindakota.go.id/api/cctv/simpang-gn-kapur",
+            "uuid": "ba201e46-ddc7-11ec-bac7-7ed30a6821af",
+            "lat": null,
+            "lng": null
+        },
+        {
+            "label": "Mhkam 2 Tugu PLN",
+            "api_url": "https://diskominfo.samarindakota.go.id/api/cctv/mhkam-2-tugu-pln",
+            "uuid": "ba208296-ddc7-11ec-afa2-7ed30a6821af",
+            "lat": null,
+            "lng": null
+        },
+        {
+            "label": "Pasar Segiri",
+            "api_url": "https://diskominfo.samarindakota.go.id/api/cctv/pasar-segiri",
+            "uuid": "ba20d99e-ddc7-11ec-bc7a-7ed30a6821af",
+            "lat": null,
+            "lng": null
+        },
+        {
+            "label": "Jembatan S. Parman",
+            "api_url": "https://diskominfo.samarindakota.go.id/api/cctv/jembatan-s-parman",
+            "uuid": "ba212be2-ddc7-11ec-9fa5-7ed30a6821af",
+            "lat": null,
+            "lng": null
+        },
+        {
+            "label": "Jembatan Pasar Segiri",
+            "api_url": "https://diskominfo.samarindakota.go.id/api/cctv/jembatan-pasar-segiri",
+            "uuid": "ba217430-ddc7-11ec-8fab-7ed30a6821af",
+            "lat": null,
+            "lng": null
+        },
+        {
+            "label": "Citra Niaga 2",
+            "api_url": "https://diskominfo.samarindakota.go.id/api/cctv/citra-niaga-2",
+            "uuid": "ba21be40-ddc7-11ec-ad56-7ed30a6821af",
+            "lat": null,
+            "lng": null
+        },
+        {
+            "label": "Jembatan Mahkota 2 (Palaran)",
+            "api_url": "https://diskominfo.samarindakota.go.id/api/cctv/jembatan-mahkota-2-palaran",
+            "uuid": "ba22058a-ddc7-11ec-b49a-7ed30a6821af",
+            "lat": null,
+            "lng": null
+        },
+        {
+            "label": "Simpang Jalan Anggur",
+            "api_url": "https://diskominfo.samarindakota.go.id/api/cctv/simpang-jalan-anggur",
+            "uuid": "ba225b0c-ddc7-11ec-bd44-7ed30a6821af",
+            "lat": null,
+            "lng": null
+        },
+        {
+            "label": "Simpang 4 Agus Salim",
+            "api_url": "https://diskominfo.samarindakota.go.id/api/cctv/simpang-4-agus-salim",
+            "uuid": "ba22ab70-ddc7-11ec-a343-7ed30a6821af",
+            "lat": "-0.49327147858722564",
+            "lng": "117.15143450898438"
+        },
+        {
+            "label": "Simpang Makaham Arah Bung Tomo",
+            "api_url": "https://diskominfo.samarindakota.go.id/api/cctv/simpang-makaham-arah-bung-tomo",
+            "uuid": "ba22f602-ddc7-11ec-a30a-7ed30a6821af",
+            "lat": null,
+            "lng": null
+        },
+        {
+            "label": "Simpang Rapak Indah",
+            "api_url": "https://diskominfo.samarindakota.go.id/api/cctv/simpang-rapak-indah",
+            "uuid": "ba2337d4-ddc7-11ec-b0e0-7ed30a6821af",
+            "lat": null,
+            "lng": null
+        },
+        {
+            "label": "Simpang Meranti",
+            "api_url": "https://diskominfo.samarindakota.go.id/api/cctv/simpang-meranti",
+            "uuid": "ba2383ce-ddc7-11ec-ab0f-7ed30a6821af",
+            "lat": "-0.5030558072219797",
+            "lng": "117.11684474152833"
+        },
+        {
+            "label": "Jembatan Mahakam 1",
+            "api_url": "https://diskominfo.samarindakota.go.id/api/cctv/jembatan-mahakam-1",
+            "uuid": "ba25b586-ddc7-11ec-aa56-7ed30a6821af",
+            "lat": "-0.5194917296134587",
+            "lng": "117.11667308015137"
+        },
+        {
+            "label": "Simpang Agus Salim",
+            "api_url": "https://diskominfo.samarindakota.go.id/api/cctv/simpang-agus-salim",
+            "uuid": "ba2adec6-ddc7-11ec-9047-7ed30a6821af",
+            "lat": "-0.49327147858722564",
+            "lng": "117.15143450898438"
+        },
+        {
+            "label": "Simpang Lembuswana Analytic",
+            "api_url": "https://diskominfo.samarindakota.go.id/api/cctv/simpang-lembuswana-analytic",
+            "uuid": "ba2b51f8-ddc7-11ec-be90-7ed30a6821af",
+            "lat": "-0.4755480749349623",
+            "lng": "117.14637049836426"
+        },
+        {
+            "label": "Simpang Pasundan",
+            "api_url": "https://diskominfo.samarindakota.go.id/api/cctv/simpang-pasundan",
+            "uuid": "ba2c4a7c-ddc7-11ec-ae50-7ed30a6821af",
+            "lat": null,
+            "lng": null
+        },
+        {
+            "label": "Simpang Masjid Raya",
+            "api_url": "https://diskominfo.samarindakota.go.id/api/cctv/simpang-masjid-raya",
+            "uuid": "ba2cbf3e-ddc7-11ec-90e4-7ed30a6821af",
+            "lat": "-0.5033562030459059",
+            "lng": "117.14692839783936"
+        },
+        {
+            "label": "Fly Over Juanda",
+            "api_url": "https://diskominfo.samarindakota.go.id/api/cctv/fly-over-juanda",
+            "uuid": "ba2d3b4e-ddc7-11ec-82b5-7ed30a6821af",
+            "lat": "-0.4725718197312758",
+            "lng": "117.13845708812892"
+        },
+        {
+            "label": "Jembatan Stres",
+            "api_url": "https://diskominfo.samarindakota.go.id/api/cctv/jembatan-stres",
+            "uuid": "ba2daea8-ddc7-11ec-963b-7ed30a6821af",
+            "lat": "-0.5006155",
+            "lng": "117.1234652"
+        },
+        {
+            "label": "Taman Samarendah 3",
+            "api_url": "https://diskominfo.samarindakota.go.id/api/cctv/taman-samarendah-3",
+            "uuid": "ba2e16cc-ddc7-11ec-a893-7ed30a6821af",
+            "lat": "-0.49657583681051515\n",
+            "lng": "117.14388140839844"
+        },
+        {
+            "label": "Simpang SPBU Kesejahteraan",
+            "api_url": "https://diskominfo.samarindakota.go.id/api/cctv/simpang-spbu-kesejahteraan",
+            "uuid": "ba2e7cf2-ddc7-11ec-93ca-7ed30a6821af",
+            "lat": "-0.4699263561996149",
+            "lng": "117.17091807526856"
+        },
+        {
+            "label": "Simpang Kantor Pos",
+            "api_url": "https://diskominfo.samarindakota.go.id/api/cctv/simpang-kantor-pos",
+            "uuid": "ba2ede72-ddc7-11ec-9795-7ed30a6821af",
+            "lat": "-0.5024121018384754",
+            "lng": "117.14340933961182"
+        },
+        {
+            "label": "Jembatan Sei Dama",
+            "api_url": "https://diskominfo.samarindakota.go.id/api/cctv/jembatan-sei-dama",
+            "uuid": "ba2f3a48-ddc7-11ec-85a4-7ed30a6821af",
+            "lat": "-0.5030921",
+            "lng": "117.1566159"
+        },
+        {
+            "label": "Simpang Gunung Lingai",
+            "api_url": "https://diskominfo.samarindakota.go.id/api/cctv/simpang-gunung-lingai",
+            "uuid": "ba2f98da-ddc7-11ec-9d84-7ed30a6821af",
+            "lat": "-0.461750",
+            "lng": "117.174452"
+        },
+        {
+            "label": "Kejaksaan Tinggi Kaltim",
+            "api_url": "https://diskominfo.samarindakota.go.id/api/cctv/kejaksaan-tinggi-kaltim",
+            "uuid": "ba2ff578-ddc7-11ec-aa0b-7ed30a6821af",
+            "lat": "-0.5123150108726371",
+            "lng": "117.13493268182177"
+        },
+        {
+            "label": "Simpang KALTIM",
+            "api_url": "https://diskominfo.samarindakota.go.id/api/cctv/simpang-kaltim",
+            "uuid": "ba30525c-ddc7-11ec-a4da-7ed30a6821af",
+            "lat": "-0.5025622997669583",
+            "lng": "117.15169200104981"
+        },
+        {
+            "label": "Simpang A. Yani Gatsu",
+            "api_url": "https://diskominfo.samarindakota.go.id/api/cctv/simpang-a-yani-gatsu",
+            "uuid": "ba30abda-ddc7-11ec-9ec9-7ed30a6821af",
+            "lat": "-0.4790959",
+            "lng": "117.1546301"
+        },
+        {
+            "label": "Taman Samarendah 2",
+            "api_url": "https://diskominfo.samarindakota.go.id/api/cctv/taman-samarendah-2",
+            "uuid": "ba315a62-ddc7-11ec-93d4-7ed30a6821af",
+            "lat": "-0.49657583681051515\n",
+            "lng": "117.14388140839844"
+        },
+        {
+            "label": "Citra Niaga 1",
+            "api_url": "https://diskominfo.samarindakota.go.id/api/cctv/citra-niaga-1",
+            "uuid": "ba31b1ba-ddc7-11ec-bd31-7ed30a6821af",
+            "lat": null,
+            "lng": null
+        },
+        {
+            "label": "Mesra Indah",
+            "api_url": "https://diskominfo.samarindakota.go.id/api/cctv/mesra-indah",
+            "uuid": "ba32019c-ddc7-11ec-918c-7ed30a6821af",
+            "lat": null,
+            "lng": null
+        },
+        {
+            "label": "Pasar Pagi",
+            "api_url": "https://diskominfo.samarindakota.go.id/api/cctv/pasar-pagi",
+            "uuid": "ba3261c8-ddc7-11ec-b90b-7ed30a6821af",
+            "lat": null,
+            "lng": null
+        },
+        {
+            "label": "Simpang Mahakam BC",
+            "api_url": "https://diskominfo.samarindakota.go.id/api/cctv/simpang-mahakam-bc",
+            "uuid": "ba32c1b8-ddc7-11ec-b921-7ed30a6821af",
+            "lat": "-0.5202641740110155",
+            "lng": "117.12156542939454\n"
+        },
+        {
+            "label": "Simpang 3 Kebun Agung",
+            "api_url": "https://diskominfo.samarindakota.go.id/api/cctv/simpang-3-kebun-agung",
+            "uuid": "ba331fc8-ddc7-11ec-961f-7ed30a6821af",
+            "lat": null,
+            "lng": null
+        },
+        {
+            "label": "Ds Budaya Pampang",
+            "api_url": "https://diskominfo.samarindakota.go.id/api/cctv/ds-budaya-pampang",
+            "uuid": "ba3379a0-ddc7-11ec-84fc-7ed30a6821af",
+            "lat": null,
+            "lng": null
+        },
+        {
+            "label": "Simpang Air Hitam",
+            "api_url": "https://diskominfo.samarindakota.go.id/api/cctv/simpang-air-hitam",
+            "uuid": "ba33d062-ddc7-11ec-bb80-7ed30a6821af",
+            "lat": "-0.47237244811691",
+            "lng": "117.13868865174561"
+        },
+        {
+            "label": "Taman Samarendah 1",
+            "api_url": "https://diskominfo.samarindakota.go.id/api/cctv/taman-samarendah-1",
+            "uuid": "ba342b48-ddc7-11ec-bd06-7ed30a6821af",
+            "lat": "-0.49657583681051515\n",
+            "lng": "117.14388140839844"
+        },
+        {
+            "label": "Jembatan Mahkota 2 (SK)",
+            "api_url": "https://diskominfo.samarindakota.go.id/api/cctv/jembatan-mahkota-2-sk",
+            "uuid": "ba34d6ce-ddc7-11ec-8eca-7ed30a6821af",
+            "lat": "-0.5344992",
+            "lng": "117.1525289"
+        },
+        {
+            "label": "Simpang Remaja",
+            "api_url": "https://diskominfo.samarindakota.go.id/api/cctv/simpang-remaja",
+            "uuid": "ba35257a-ddc7-11ec-84b2-7ed30a6821af",
+            "lat": null,
+            "lng": null
+        },
+        {
+            "label": "Simpang Sempaja",
+            "api_url": "https://diskominfo.samarindakota.go.id/api/cctv/simpang-sempaja",
+            "uuid": "ba35845c-ddc7-11ec-83ed-7ed30a6821af",
+            "lat": "-0.4501430203050458",
+            "lng": "117.15310820740967"
+        },
+        {
+            "label": "Simpang 4 Tengkawang",
+            "api_url": "https://diskominfo.samarindakota.go.id/api/cctv/simpang-4-tengkawang",
+            "uuid": "ba35d47a-ddc7-11ec-927d-7ed30a6821af",
+            "lat": "-0.500223503060648",
+            "lng": "117.1125532071045"
+        },
+        {
+            "label": "Simpang Lembuswana-Tenggarong",
+            "api_url": "https://diskominfo.samarindakota.go.id/api/cctv/simpang-lembuswana-tenggarong",
+            "uuid": "ba3928e6-ddc7-11ec-8955-7ed30a6821af",
+            "lat": null,
+            "lng": null
+        },
+        {
+            "label": "Simpang Apr Pranoto",
+            "api_url": "https://diskominfo.samarindakota.go.id/api/cctv/simpang-apr-pranoto",
+            "uuid": "ba39a064-ddc7-11ec-b13d-7ed30a6821af",
+            "lat": null,
+            "lng": null
+        },
+        {
+            "label": "Simpang 3 Suryanata",
+            "api_url": "https://diskominfo.samarindakota.go.id/api/cctv/simpang-3-suryanata",
+            "uuid": "ba3a2426-ddc7-11ec-85b5-7ed30a6821af",
+            "lat": null,
+            "lng": null
+        },
+        {
+            "label": "Simpang Mugirejo",
+            "api_url": "https://diskominfo.samarindakota.go.id/api/cctv/simpang-mugirejo",
+            "uuid": "ba3da25e-ddc7-11ec-8230-7ed30a6821af",
+            "lat": null,
+            "lng": null
+        },
+        {
+            "label": "DPRD Kota Samarinda",
+            "api_url": "https://diskominfo.samarindakota.go.id/api/cctv/dprd-kota-samarinda",
+            "uuid": "ba3e21b6-ddc7-11ec-8e8c-7ed30a6821af",
+            "lat": null,
+            "lng": null
+        },
+        {
+            "label": "Fly Over Aw.Sjah",
+            "api_url": "https://diskominfo.samarindakota.go.id/api/cctv/fly-over-awsjah",
+            "uuid": "ba3ea67c-ddc7-11ec-b711-7ed30a6821af",
+            "lat": null,
+            "lng": null
+        },
+        {
+            "label": "DPRD Prov Kaltim",
+            "api_url": "https://diskominfo.samarindakota.go.id/api/cctv/dprd-prov-kaltim",
+            "uuid": "ba3f21c4-ddc7-11ec-93b2-7ed30a6821af",
+            "lat": null,
+            "lng": null
+        },
+        {
+            "label": "Simpang Hotel Mesra",
+            "api_url": "https://diskominfo.samarindakota.go.id/api/cctv/simpang-hotel-mesra",
+            "uuid": "ba3f9708-ddc7-11ec-8ef8-7ed30a6821af",
+            "lat": "-0.48966672229100167",
+            "lng": "117.14624175233155"
+        },
+        {
+            "label": "Simpang Air Putih",
+            "api_url": "https://diskominfo.samarindakota.go.id/api/cctv/simpang-air-putih",
+            "uuid": "ba43a960-ddc7-11ec-a6e9-7ed30a6821af",
+            "lat": "-0.48464580850860645",
+            "lng": "117.12671527070313"
+        },
+        {
+            "label": "Simpang Lembuswana",
+            "api_url": "https://diskominfo.samarindakota.go.id/api/cctv/simpang-lembuswana",
+            "uuid": "ba442714-ddc7-11ec-ab69-7ed30a6821af",
+            "lat": "-0.4755480749349623",
+            "lng": "117.14637049836426"
+        },
+        {
+            "label": "Simpang Bank KALTIMTARA",
+            "api_url": "https://diskominfo.samarindakota.go.id/api/cctv/simpang-bank-kaltimtara",
+            "uuid": "ba44ac7a-ddc7-11ec-8151-7ed30a6821af",
+            "lat": "-0.5012963456901927",
+            "lng": "117.1436024586609"
+        },
+        {
+            "label": "Simpang 3 Diponeogoro",
+            "api_url": "https://diskominfo.samarindakota.go.id/api/cctv/simpang-3-diponeogoro",
+            "uuid": "4223c3ee-7605-11ed-9be2-7cd30a6821ab",
+            "lat": null,
+            "lng": null
+        }
+    ]
+}

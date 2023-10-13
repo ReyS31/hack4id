@@ -1,0 +1,254 @@
+[
+    {
+        "id": 3,
+        "kelurahan": "Bugis",
+        "kelompok": "Hotel",
+        "nama": "HOTEL HAYANI",
+        "alamat": "JL. NILAM RT. 08 KEL. BUGIS KEC. SAMARINDA KOTA",
+        "longitude": "117.14511394500732",
+        "latitude": "-0.49932300798561136"
+    },
+    {
+        "id": 4,
+        "kelurahan": "Bugis",
+        "kelompok": "Hotel",
+        "nama": "HOTEL PIRUS",
+        "alamat": "JL. NILAM RT.08 KEL. BUGIS KEC. SAMARINDA KOTA",
+        "longitude": "117.1450924873352",
+        "latitude": "-0.49943029227117447"
+    },
+    {
+        "id": 13,
+        "kelurahan": "Temindung Permai",
+        "kelompok": "Hotel",
+        "nama": "Hotel Violand Garden",
+        "alamat": "Jl. A. Yani RT 003",
+        "longitude": "117.17092752456665",
+        "latitude": "-0.4692096716381629"
+    },
+    {
+        "id": 14,
+        "kelurahan": "Temindung Permai",
+        "kelompok": "Hotel",
+        "nama": "The Hotel",
+        "alamat": "Jl. S. Parman RT 031",
+        "longitude": "117.17092752456665",
+        "latitude": "-0.4692096716381629"
+    },
+    {
+        "id": 32,
+        "kelurahan": "Sungai Pinang Luar",
+        "kelompok": "Hotel",
+        "nama": "HOTEL MG",
+        "alamat": "JL. KH.AGUS  SALIM RT. 17",
+        "longitude": "117.15722680091858",
+        "latitude": "-0.4980638479348036"
+    },
+    {
+        "id": 40,
+        "kelurahan": "Harapan Baru",
+        "kelompok": "Hotel",
+        "nama": "Hotel Harapan Baru",
+        "alamat": "Jl. Cipto Mangunkusumo No.62",
+        "longitude": "117.10594698786736",
+        "latitude": "-0.5400333314388939"
+    },
+    {
+        "id": 41,
+        "kelurahan": "Harapan Baru",
+        "kelompok": "Hotel",
+        "nama": "Hotel Marantama",
+        "alamat": "Jl. Cipto Mangunkusumo RT.29",
+        "longitude": "117.10594698786736",
+        "latitude": "-0.5400333314388939"
+    },
+    {
+        "id": 50,
+        "kelurahan": "Gunung Panjang",
+        "kelompok": "Hotel",
+        "nama": "Hotel Manau",
+        "alamat": "Jl. Cipto Mangunkusumo",
+        "longitude": "117.12470233440399",
+        "latitude": "-0.5319119578977846"
+    },
+    {
+        "id": 54,
+        "kelurahan": "Pasar Pagi",
+        "kelompok": "Hotel",
+        "nama": "Hotel Aida",
+        "alamat": "JL. KH. Mas Temenggung",
+        "longitude": "117.1468842850594",
+        "latitude": "-0.5002792559830667"
+    },
+    {
+        "id": 55,
+        "kelurahan": "Pasar Pagi",
+        "kelompok": "Hotel",
+        "nama": "Hotel Hidayah 1",
+        "alamat": "JL. KH. Mas Temenggung No.4",
+        "longitude": "117.1468842850594",
+        "latitude": "-0.5002792559830667"
+    },
+    {
+        "id": 56,
+        "kelurahan": "Pasar Pagi",
+        "kelompok": "Hotel",
+        "nama": "Hotel Mega Sentosa",
+        "alamat": "JL. Veteran No.88",
+        "longitude": "117.1468842850594",
+        "latitude": "-0.5002792559830667"
+    },
+    {
+        "id": 57,
+        "kelurahan": "Pasar Pagi",
+        "kelompok": "Hotel",
+        "nama": "Hotel Grand Kartika",
+        "alamat": "Jl. KH. Khalid No. 35",
+        "longitude": "117.1468842850594",
+        "latitude": "-0.5002792559830667"
+    },
+    {
+        "id": 58,
+        "kelurahan": "Pasar Pagi",
+        "kelompok": "Hotel",
+        "nama": "Grand Jamrud Hotel",
+        "alamat": "Jl. Jamrud",
+        "longitude": "117.1468842850594",
+        "latitude": "-0.5002792559830667"
+    },
+    {
+        "id": 59,
+        "kelurahan": "Pasar Pagi",
+        "kelompok": "Hotel",
+        "nama": "Hotel MJ",
+        "alamat": "Jl. KH. Khalid No.1",
+        "longitude": "117.1468842850594",
+        "latitude": "-0.5002792559830667"
+    },
+    {
+        "id": 60,
+        "kelurahan": "Pasar Pagi",
+        "kelompok": "Hotel",
+        "nama": "Hotel Pirus",
+        "alamat": "Jl. Pirus No. 30",
+        "longitude": "117.1468842850594",
+        "latitude": "-0.5002792559830667"
+    },
+    {
+        "id": 62,
+        "kelurahan": "Sempaja Selatan",
+        "kelompok": "Hotel",
+        "nama": "Hotel Atlit Sempaja",
+        "alamat": "Komplek Stadion Madya Sempaja",
+        "longitude": "117.14764547261393",
+        "latitude": "-0.46858966231495597"
+    },
+    {
+        "id": 72,
+        "kelurahan": "Pelabuhan",
+        "kelompok": "Hotel",
+        "nama": "HOTEL SENYIUR",
+        "alamat": "jalan P. Diponegoro",
+        "longitude": "117.15412061871712",
+        "latitude": "-0.49892752220666114"
+    },
+    {
+        "id": 73,
+        "kelurahan": "Pelabuhan",
+        "kelompok": "Hotel",
+        "nama": "HOTEL RAJA",
+        "alamat": "jalan Imam Bonjol",
+        "longitude": "117.15412061871712",
+        "latitude": "-0.49892752220666114"
+    },
+    {
+        "id": 74,
+        "kelurahan": "Pelabuhan",
+        "kelompok": "Hotel",
+        "nama": "HOTEL HORISON",
+        "alamat": "Jalan Imam Bonjol",
+        "longitude": "117.15412061871712",
+        "latitude": "-0.49892752220666114"
+    },
+    {
+        "id": 75,
+        "kelurahan": "Pelabuhan",
+        "kelompok": "Hotel",
+        "nama": "HOTEL ASTON",
+        "alamat": "jalan P. Hidayatulah",
+        "longitude": "117.15412061871712",
+        "latitude": "-0.49892752220666114"
+    },
+    {
+        "id": 76,
+        "kelurahan": "Pelabuhan",
+        "kelompok": "Hotel",
+        "nama": "HOTEL ZOOM",
+        "alamat": "Jalan Mulawarman",
+        "longitude": "117.15412061871712",
+        "latitude": "-0.49892752220666114"
+    },
+    {
+        "id": 77,
+        "kelurahan": "Pelabuhan",
+        "kelompok": "Hotel",
+        "nama": "HOTEL SWISS BELL",
+        "alamat": "Jalan  Mulawarman",
+        "longitude": "117.15412061871712",
+        "latitude": "-0.49892752220666114"
+    },
+    {
+        "id": 78,
+        "kelurahan": "Pelabuhan",
+        "kelompok": "Hotel",
+        "nama": "HOTEL IBIS DAN HOTEL MERCURY",
+        "alamat": "Jalan Mulawarman",
+        "longitude": "117.15412061871712",
+        "latitude": "-0.49892752220666114"
+    },
+    {
+        "id": 79,
+        "kelurahan": "Pelabuhan",
+        "kelompok": "Hotel",
+        "nama": "HOTEL GADING KENCANA",
+        "alamat": "Jalan P. Sulawesi",
+        "longitude": "117.15412061871712",
+        "latitude": "-0.49892752220666114"
+    },
+    {
+        "id": 110,
+        "kelurahan": "Karang Asam Ulu",
+        "kelompok": "Hotel",
+        "nama": "Harris",
+        "alamat": "Jl. Untung Suropati",
+        "longitude": "117.11728334426881",
+        "latitude": "-0.5203735812453806"
+    },
+    {
+        "id": 113,
+        "kelurahan": "Karang Anyar",
+        "kelompok": "Hotel",
+        "nama": "Hotel Kharisma",
+        "alamat": "Jl. Tengkawang RT 15",
+        "longitude": "117.1147084236145",
+        "latitude": "-0.5019099892142451"
+    },
+    {
+        "id": 114,
+        "kelurahan": "Karang Anyar",
+        "kelompok": "Hotel",
+        "nama": "Hotel OYO Tengkawang",
+        "alamat": "Jl. Tengkawang Rt 15",
+        "longitude": "117.11422562599184",
+        "latitude": "-0.5014701237986054"
+    },
+    {
+        "id": 121,
+        "kelurahan": "Handil Bakti",
+        "kelompok": "Hotel",
+        "nama": "Sejahtera",
+        "alamat": "Jl. Trikora RT. 25 Kel. Handil Bakti",
+        "longitude": "117.18168776617472",
+        "latitude": "-0.5889068209225506"
+    }
+]

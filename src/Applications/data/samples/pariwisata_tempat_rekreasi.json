@@ -1,0 +1,236 @@
+[
+    {
+        "id": 26,
+        "kelurahan": "Sempaja Utara",
+        "kelompok": "Tempat Rekreasi",
+        "nama": "AIR TERJUN BERAMBAI",
+        "alamat": "JL. BERAMBAI RT. 31",
+        "longitude": "117.16130509080415",
+        "latitude": "-0.41993706003485715"
+    },
+    {
+        "id": 27,
+        "kelurahan": "Sempaja Utara",
+        "kelompok": "Tempat Rekreasi",
+        "nama": "AIR TERJUN PINANG SERIBU",
+        "alamat": "PINANG SERIBU RT. 13",
+        "longitude": "117.16130509080415",
+        "latitude": "-0.41993706003485715"
+    },
+    {
+        "id": 28,
+        "kelurahan": "Sempaja Utara",
+        "kelompok": "Tempat Rekreasi",
+        "nama": "ULIN ARYA",
+        "alamat": "JL. TELUK BATU RT. 20",
+        "longitude": "117.16130509080415",
+        "latitude": "-0.41993706003485715"
+    },
+    {
+        "id": 35,
+        "kelurahan": "Tanah Merah",
+        "kelompok": "Tempat Rekreasi",
+        "nama": "AIR TERJUN TANAH MERAH",
+        "alamat": "JL. CITANDUY RT. 24",
+        "longitude": "117.22105803743591",
+        "latitude": "-0.4351778830130056"
+    },
+    {
+        "id": 36,
+        "kelurahan": "Tanah Merah",
+        "kelompok": "Tempat Rekreasi",
+        "nama": "KEBUN RAYA UNMUL SAMARINDA",
+        "alamat": "JL SMD-BONTANG RT. 12",
+        "longitude": "117.22105803743591",
+        "latitude": "-0.4351778830130056"
+    },
+    {
+        "id": 37,
+        "kelurahan": "Tanah Merah",
+        "kelompok": "Tempat Rekreasi",
+        "nama": "BUKIT TANAH MERAH GOLF",
+        "alamat": "JL. SMD-BONTANG RT. 25",
+        "longitude": "117.22105803743591",
+        "latitude": "-0.4351778830130056"
+    },
+    {
+        "id": 43,
+        "kelurahan": "Sambutan",
+        "kelompok": "Tempat Rekreasi",
+        "nama": "Kolam Wisata Tjiu Palace",
+        "alamat": "Jl. Sultan Sulaiman No.6\r\nSambutan RT 18\r\nSamarinda City,",
+        "longitude": "117.19120502471924",
+        "latitude": "-0.5157281851250598"
+    },
+    {
+        "id": 44,
+        "kelurahan": "Loa Bakung",
+        "kelompok": "Tempat Rekreasi",
+        "nama": "TAMAN SEGITIGA LOA BAKUNG",
+        "alamat": "JL. JAKARTA BLOK. K RT. 54",
+        "longitude": "117.0918639519756",
+        "latitude": "-0.5310611139858785"
+    },
+    {
+        "id": 46,
+        "kelurahan": "Lempake",
+        "kelompok": "Tempat Rekreasi",
+        "nama": "Bendungan Benanga",
+        "alamat": "Jln. Joyo Mulyo RT.30 Kelurahan Lempake",
+        "longitude": "117.19305621703802",
+        "latitude": "-0.4091373242847471"
+    },
+    {
+        "id": 47,
+        "kelurahan": "Lempake",
+        "kelompok": "Tempat Rekreasi",
+        "nama": "Track Dayung",
+        "alamat": "Jln. Sido Rejo RT.41 Kelurahan Lempake",
+        "longitude": "117.20056640227972",
+        "latitude": "-0.4223560384012816"
+    },
+    {
+        "id": 48,
+        "kelurahan": "Sungai Kapih",
+        "kelompok": "Tempat Rekreasi",
+        "nama": "PEMANCINGAN MAHKOTA",
+        "alamat": "JALAN TATAKO RT. 25",
+        "longitude": "117.17654943466187",
+        "latitude": "-0.535135833359235"
+    },
+    {
+        "id": 51,
+        "kelurahan": "Gunung Panjang",
+        "kelompok": "Tempat Rekreasi",
+        "nama": "Lipan Hill Swimingpool",
+        "alamat": "Jl. Cipto Mangunkusumo",
+        "longitude": "117.11415588855743",
+        "latitude": "-0.5381665965992282"
+    },
+    {
+        "id": 52,
+        "kelurahan": "Gunung Panjang",
+        "kelompok": "Tempat Rekreasi",
+        "nama": "Danau Perum Pinang Bahari",
+        "alamat": "Perum Pinang Bahari",
+        "longitude": "117.12714345690551",
+        "latitude": "-0.5276738636190429"
+    },
+    {
+        "id": 61,
+        "kelurahan": "Gunung Lingai",
+        "kelompok": "Tempat Rekreasi",
+        "nama": "Bukit Aren",
+        "alamat": "Jl. Gn. Lingai, Gn. Lingai, Kec. Sungai Pinang, Kota Samarinda, Kalimantan Timur 75242",
+        "longitude": "117.17642605304718",
+        "latitude": "-0.4468890416493116"
+    },
+    {
+        "id": 80,
+        "kelurahan": "Bugis",
+        "kelompok": "Tempat Rekreasi",
+        "nama": "TAMAN SAMARENDAH",
+        "alamat": "JL. BHAYANGKARA RT 5",
+        "longitude": "117.14167582114874",
+        "latitude": "-0.4920471981677138"
+    },
+    {
+        "id": 82,
+        "kelurahan": "Mangkupalas",
+        "kelompok": "Tempat Rekreasi",
+        "nama": "WISATA TEBING LONCENG",
+        "alamat": "JL. DWIKORA RT 17",
+        "longitude": "117.14982658624649",
+        "latitude": "-0.5285566581042254"
+    },
+    {
+        "id": 83,
+        "kelurahan": "Sindang Sari",
+        "kelompok": "Tempat Rekreasi",
+        "nama": "Pemancingan Lion Jaya",
+        "alamat": "JL. Masaji Sindang Sari",
+        "longitude": "117.2312879562378",
+        "latitude": "-0.5609589601648542"
+    },
+    {
+        "id": 84,
+        "kelurahan": "Sindang Sari",
+        "kelompok": "Tempat Rekreasi",
+        "nama": "Pemancingan Maidiyan Fun Fishing",
+        "alamat": "JL. Dahlia RT. 09 Sindang Sari",
+        "longitude": "117.2312879562378",
+        "latitude": "-0.5609589601648542"
+    },
+    {
+        "id": 85,
+        "kelurahan": "Sindang Sari",
+        "kelompok": "Tempat Rekreasi",
+        "nama": "Pemancingan Lien Star",
+        "alamat": "JL. Pasundan RT. 03 Sindang Sari",
+        "longitude": "117.2312879562378",
+        "latitude": "-0.5609589601648542"
+    },
+    {
+        "id": 90,
+        "kelurahan": "Jawa",
+        "kelompok": "Tempat Rekreasi",
+        "nama": "Tepian",
+        "alamat": "Jl. Gajah Mada",
+        "longitude": "117.13556930422783",
+        "latitude": "-0.49790158041852306"
+    },
+    {
+        "id": 92,
+        "kelurahan": "Tanah Merah",
+        "kelompok": "Tempat Rekreasi",
+        "nama": "JUNGLE WATER",
+        "alamat": "JALAN SAMARINDA - BONTANG RT. 27",
+        "longitude": "117.22105803743591",
+        "latitude": "-0.4351778830130056"
+    },
+    {
+        "id": 93,
+        "kelurahan": "Tanah Merah",
+        "kelompok": "Tempat Rekreasi",
+        "nama": "KEBUN DESA",
+        "alamat": "JALAN CITANDUY RT.24",
+        "longitude": "117.22105803743591",
+        "latitude": "-0.4351778830130056"
+    },
+    {
+        "id": 111,
+        "kelurahan": "Karang Anyar",
+        "kelompok": "Tempat Rekreasi",
+        "nama": "Taman Sejati",
+        "alamat": "Jl. MT haryono RT 37",
+        "longitude": "117.11515903472902",
+        "latitude": "-0.4947863115440212"
+    },
+    {
+        "id": 112,
+        "kelurahan": "Karang Anyar",
+        "kelompok": "Tempat Rekreasi",
+        "nama": "Taman lalu Lintas Kantor Kelurahan Karang Anyar",
+        "alamat": "Jl. MT Haryono Rt 15",
+        "longitude": "117.11352288722993",
+        "latitude": "-0.4988631159731656"
+    },
+    {
+        "id": 122,
+        "kelurahan": "Handil Bakti",
+        "kelompok": "Tempat Rekreasi",
+        "nama": "Kolam Rerang",
+        "alamat": "Jl. Nusa Indah RT.  05 Kel. Handil Bakti",
+        "longitude": "117.18168776617472",
+        "latitude": "-0.5889068209225506"
+    },
+    {
+        "id": 130,
+        "kelurahan": "Karang Asam Ilir",
+        "kelompok": "Tempat Rekreasi",
+        "nama": "Mahakam Lampion Garden",
+        "alamat": "Jl. Slamet Riyadi No.75 Rt. 02, Karang Asam Ilir, Kec. Sungai Kunjang, Kota Samarinda, Kalimantan Timur 75243",
+        "longitude": "117.11965441703798",
+        "latitude": "-0.5064481111611057"
+    }
+]
