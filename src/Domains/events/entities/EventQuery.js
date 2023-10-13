@@ -1,7 +1,7 @@
 class EventQuery {
   constructor(payload) {
     this.user_id = payload.user_id;
-    this.name = payload.name;
+    this.title = payload.title;
     this.page = payload.page;
 
     Object.keys(this).forEach(

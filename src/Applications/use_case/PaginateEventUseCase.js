@@ -6,10 +6,9 @@ class PaginateEventUseCase {
   }
 
   async execute(useCasePayload) {
-    console.log(useCasePayload);
     const eventQuery = new EventQuery(useCasePayload);
-    console.log(eventQuery);
-    await this._eventRepository.pagination(eventQuery);
+    const events = await this._eventRepository.pagination(eventQuery);
+    return events;
   }
 }
 

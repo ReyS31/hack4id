@@ -12,7 +12,7 @@ class EventRepository {
     throw new Error('EVENT_REPOSITORY.METHOD_NOT_IMPLEMENTED');
   }
 
-  async updateEvent(id, data) {
+  async getHomeHeadlines() {
     throw new Error('EVENT_REPOSITORY.METHOD_NOT_IMPLEMENTED');
   }
 
@@ -21,6 +21,14 @@ class EventRepository {
   }
 
   async verifyEventExists(id) {
+    throw new Error('EVENT_REPOSITORY.METHOD_NOT_IMPLEMENTED');
+  }
+
+  async getViews(id) {
+    throw new Error('EVENT_REPOSITORY.METHOD_NOT_IMPLEMENTED');
+  }
+
+  async setViews(id, amount) {
     throw new Error('EVENT_REPOSITORY.METHOD_NOT_IMPLEMENTED');
   }
 }
