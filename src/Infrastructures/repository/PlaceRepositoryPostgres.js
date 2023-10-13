@@ -223,6 +223,25 @@ class PlaceRepositoryPostgres extends PlaceRepository {
       throw new InvariantError('nomor tidak tersedia');
     }
   }
+
+  async activatePin(id, date) {
+    const query = {
+      text: 'UPDATE places SET pinned = true, pinned_until = $1 WHERE id = $2',
+      values: [date, id],
+    };
+
+    return this._pool.query(query);
+  }
+
+  async deactivatePin() {
+    const now = new Date().toISOString();
+    const query = {
+      text: 'UPDATE places SET pinned = false, pinned_until = NULL WHERE pinned_until = $1',
+      now,
+    };
+
+    return this._pool.query(query);
+  }
 }
 
 module.exports = PlaceRepositoryPostgres;

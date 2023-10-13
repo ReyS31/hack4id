@@ -6,21 +6,44 @@ const places = require('../../Interfaces/http/api/places');
 const categories = require('../../Interfaces/http/api/categories');
 const ClientError = require('../../Commons/exceptions/ClientError');
 const events = require('../../Interfaces/http/api/events');
+const AddEventViewsUseCase = require('../../Applications/use_case/AddEventViewsUseCase');
+const payments = require('../../Interfaces/http/api/payments');
 
 const app = express();
 
 module.exports = async (container) => {
-  const log = (req, res, next) => {
-    // eslint-disable-next-line no-console
-    console.log(`${req.method} ${req.url}`);
+  const getClientId = (req, res, next) => {
+    const splitted = req.url.split('/');
+    splitted.shift();
+    const clientId = req.headers['x-client-id'];
 
+    if (splitted.includes('events') && splitted.length > 1 && !splitted.includes('home') && clientId) {
+      const addEventViews = container.getInstance(AddEventViewsUseCase.name);
+      addEventViews.execute({
+        eventId:
+          splitted[splitted.length - 1],
+        clientId,
+      });
+    }
+    req.clientId = clientId;
     next();
   };
 
-  app.set(express.json());
-  app.use(cors());
+  app.use(express.json());
 
-  app.use(log);
+  if (process.env.NODE_ENV !== 'production') {
+    const log = (req, res, next) => {
+      // eslint-disable-next-line no-console
+      console.log(`${req.method} ${req.url}`);
+
+      next();
+    };
+
+    app.use(log);
+  }
+
+  app.use(cors());
+  app.use(getClientId);
   app.get('/', (_, res) => {
     res.send({
       status: 'success',
@@ -31,6 +54,7 @@ module.exports = async (container) => {
   app.use('/authentications', authentications(container));
   app.use('/users', users(container));
   app.use('/categories', categories(container));
+  app.use('/payments', payments(container));
   app.use('/places', places(container));
   app.use('/events', events(container));
 

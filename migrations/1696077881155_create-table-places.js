@@ -43,10 +43,10 @@ exports.up = (pgm) => {
       notNull: true,
     },
     pinned: {
-      type: "BOOLEAN",
-      default: false
+      type: 'BOOLEAN',
+      default: false,
     },
-    pinnedUntil: {
+    pinned_until: {
       type: 'TIMESTAMPTZ',
     },
     created_at: {

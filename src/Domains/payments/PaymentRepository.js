@@ -2,7 +2,7 @@
 class PaymentRepository {
   getPayments(getPaymentsQuery) { }
 
-  addPayment(addPayment) { }
+  createOrder(createOrder) { }
 }
 
 module.exports = PaymentRepository;

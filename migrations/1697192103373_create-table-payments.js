@@ -35,10 +35,7 @@ exports.up = (pgm) => {
     'FOREIGN KEY(user_id) REFERENCES users(id)',
   );
 
-  pgm.createIndex(
-    'payments',
-    'dyn_id',
-  );
+  pgm.createIndex('payments', 'dyn_id');
 };
 
 exports.down = (pgm) => {

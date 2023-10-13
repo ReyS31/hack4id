@@ -9,13 +9,14 @@ const createServer = require('./Infrastructures/http/createServer');
 const CategoryRepositoryPostgres = require('./Infrastructures/repository/CategoryRepositoryPostgres');
 const PlaceRepositoryPostgres = require('./Infrastructures/repository/PlaceRepositoryPostgres');
 const BcryptPasswordHash = require('./Infrastructures/security/BcryptPasswordHash');
-const EventRepositoryPostgress = require('./Infrastructures/repository/EventRepositoryPostgress');
+const EventRepositoryPostgres = require('./Infrastructures/repository/EventRepositoryPostgres');
+const scheduler = require('./scheduler');
 
 const seeding = async () => {
   const client = await pool.connect();
   try {
     await client.query('BEGIN');
-    const eventRepository = new EventRepositoryPostgress(client, v4);
+    const eventRepository = new EventRepositoryPostgres(client, v4);
     const categoryRepository = new CategoryRepositoryPostgres(client, v4);
     const placeRepository = new PlaceRepositoryPostgres(client, v4);
     const passwordHash = new BcryptPasswordHash(bcrypt);
@@ -50,6 +51,7 @@ const seeding = async () => {
 const start = async () => {
   const port = process.env.PORT;
   const server = await createServer(container);
+  scheduler();
   server.listen(port);
 
   // eslint-disable-next-line no-console

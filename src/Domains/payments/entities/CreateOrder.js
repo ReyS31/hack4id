@@ -1,9 +1,9 @@
-class GetPaymentsQuery {
+class CreateOrder {
   constructor(payload) {
     this.#verifyPayload(payload);
     this.user_id = payload.user_id;
     this.dyn_id = payload.dyn_id;
-    this.media_type = payload.type;
+    this.media_type = payload.media_type;
     this.total = payload.total;
     this.unpin_at = payload.unpin_at;
 
@@ -18,7 +18,7 @@ class GetPaymentsQuery {
     } = payload;
 
     if (!user_id || !dyn_id || !media_type || !total || !unpin_at) {
-      throw new Error('ADD_PAYMENT.NOT_CONTAIN_NEEDED_PROPERTY');
+      throw new Error('CREATE_ORDER.NOT_CONTAIN_NEEDED_PROPERTY');
     }
 
     if (typeof user_id !== 'string'
@@ -26,9 +26,9 @@ class GetPaymentsQuery {
     || typeof media_type !== 'string'
     || typeof total !== 'number'
     || typeof unpin_at !== 'string') {
-      throw new Error('ADD_PAYMENT.NOT_MEET_DATA_TYPE_SPECIFICATION');
+      throw new Error('CREATE_ORDER.NOT_MEET_DATA_TYPE_SPECIFICATION');
     }
   }
 }
 
-module.exports = GetPaymentsQuery;
+module.exports = CreateOrder;

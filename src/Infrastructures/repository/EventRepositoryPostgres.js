@@ -2,7 +2,7 @@ const InvariantError = require('../../Commons/exceptions/InvariantError');
 const EventRepository = require('../../Domains/events/EventRepository');
 const Event = require('../../Domains/events/entities/Event');
 
-class EventRepositoryPostgress extends EventRepository {
+class EventRepositoryPostgres extends EventRepository {
   constructor(pool, idGenerator) {
     super();
     this._pool = pool;
@@ -65,7 +65,9 @@ class EventRepositoryPostgress extends EventRepository {
         page = eventQuery[key];
       }
     });
-    text += ` ORDER BY pinned DESC, created_at DESC LIMIT $${i} OFFSET $${i + 1}`;
+    text += ` ORDER BY pinned DESC, created_at DESC LIMIT $${i} OFFSET $${
+      i + 1
+    }`;
     values.push(limit);
     values.push(limit * (page - 1));
 
@@ -155,6 +157,25 @@ class EventRepositoryPostgress extends EventRepository {
       throw new InvariantError('update gagal');
     }
   }
+
+  async activatePin(id, date) {
+    const query = {
+      text: 'UPDATE events SET pinned = true, pinned_until = $1 WHERE id = $2',
+      values: [date, id],
+    };
+
+    return this._pool.query(query);
+  }
+
+  async deactivatePin() {
+    const now = new Date().toISOString();
+    const query = {
+      text: 'UPDATE events SET pinned = false, pinned_until = NULL WHERE pinned_until = $1',
+      values: [now],
+    };
+
+    return this._pool.query(query);
+  }
 }
 
-module.exports = EventRepositoryPostgress;
+module.exports = EventRepositoryPostgres;

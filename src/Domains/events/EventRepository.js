@@ -31,6 +31,14 @@ class EventRepository {
   async setViews(id, amount) {
     throw new Error('EVENT_REPOSITORY.METHOD_NOT_IMPLEMENTED');
   }
+
+  async activatePin(id, date) {
+    throw new Error('EVENT_REPOSITORY.METHOD_NOT_IMPLEMENTED');
+  }
+
+  async deactivatePin() {
+    throw new Error('EVENT_REPOSITORY.METHOD_NOT_IMPLEMENTED');
+  }
 }
 
 module.exports = EventRepository;

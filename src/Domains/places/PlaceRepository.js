@@ -31,6 +31,14 @@ class PlaceRepository {
   async isEmailAvailable(email) {
     throw new Error('PLACE_REPOSITORY.METHOD_NOT_IMPLEMENTED');
   }
+
+  async activatePin(id, date) {
+    throw new Error('PLACE_REPOSITORY.METHOD_NOT_IMPLEMENTED');
+  }
+
+  async deactivatePin() {
+    throw new Error('PLACE_REPOSITORY.METHOD_NOT_IMPLEMENTED');
+  }
 }
 
 module.exports = PlaceRepository;

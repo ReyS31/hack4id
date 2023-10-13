@@ -18,7 +18,11 @@ const PlaceRepositoryPostgres = require('./repository/PlaceRepositoryPostgres');
 const CategoryRepository = require('../Domains/categories/CategoryRepository');
 const CategoryRepositoryPostgres = require('./repository/CategoryRepositoryPostgres');
 const EventRepository = require('../Domains/events/EventRepository');
-const EventRepositoryPostgress = require('./repository/EventRepositoryPostgress');
+const EventRepositoryPostgres = require('./repository/EventRepositoryPostgres');
+const EventViewRepository = require('../Domains/event-views/EventViewRepository');
+const EventViewRepositoryPostgres = require('./repository/EventViewRepositoryPostgres');
+const PaymentRepository = require('../Domains/payments/PaymentRepository');
+const PaymentRepositoryPostgress = require('./repository/PaymentRepositoryPostgres');
 
 // use case
 const AddUserUseCase = require('../Applications/use_case/AddUserUseCase');
@@ -35,6 +39,8 @@ const GetPlaceUseCase = require('../Applications/use_case/GetPlaceUseCase');
 const PaginateEventUseCase = require('../Applications/use_case/PaginateEventUseCase');
 const GetEventUseCase = require('../Applications/use_case/GetEventUseCase');
 const GetHomeHeadlinesUseCase = require('../Applications/use_case/GetHomeHeadlinesUseCase');
+const AddEventViewsUseCase = require('../Applications/use_case/AddEventViewsUseCase');
+const CreateOrderPinUseCase = require('../Applications/use_case/CreateOrderPinUseCase');
 
 // creating container
 const container = createContainer();
@@ -118,7 +124,7 @@ container.register([
   },
   {
     key: EventRepository.name,
-    Class: EventRepositoryPostgress,
+    Class: EventRepositoryPostgres,
     parameter: {
       dependencies: [
         {
@@ -128,6 +134,24 @@ container.register([
           concrete: uuidv4,
         },
       ],
+    },
+  },
+  {
+    key: EventViewRepository.name,
+    Class: EventViewRepositoryPostgres,
+    parameter: {
+      dependencies: [
+        {
+          concrete: pool,
+        },
+      ],
+    },
+  },
+  {
+    key: PaymentRepository.name,
+    Class: PaymentRepositoryPostgress,
+    parameter: {
+      dependencies: [{ concrete: pool }],
     },
   },
 ]);
@@ -277,6 +301,44 @@ container.register([
     parameter: {
       injectType: 'destructuring',
       dependencies: [
+        {
+          name: 'eventRepository',
+          internal: EventRepository.name,
+        },
+      ],
+    },
+  },
+  {
+    key: AddEventViewsUseCase.name,
+    Class: AddEventViewsUseCase,
+    parameter: {
+      injectType: 'destructuring',
+      dependencies: [
+        {
+          name: 'eventRepository',
+          internal: EventRepository.name,
+        },
+        {
+          name: 'eventViewRepository',
+          internal: EventViewRepository.name,
+        },
+      ],
+    },
+  },
+  {
+    key: CreateOrderPinUseCase.name,
+    Class: CreateOrderPinUseCase,
+    parameter: {
+      injectType: 'destructuring',
+      dependencies: [
+        {
+          name: 'paymentRepository',
+          internal: PaymentRepository.name,
+        },
+        {
+          name: 'placeRepository',
+          internal: PlaceRepository.name,
+        },
         {
           name: 'eventRepository',
           internal: EventRepository.name,

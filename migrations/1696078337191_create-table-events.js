@@ -36,7 +36,7 @@ exports.up = (pgm) => {
       type: 'BOOLEAN',
       default: false,
     },
-    pinnedUntil: {
+    pinned_until: {
       type: 'TIMESTAMPTZ',
     },
     created_at: {

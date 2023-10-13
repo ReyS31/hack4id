@@ -1,3 +1,5 @@
+const AddPlace = require('../../Domains/places/entities/AddPlace');
+
 class AddPlaceUseCase {
   constructor({ categoryRepository, placeRepository }) {
     this._categoryRepository = categoryRepository;
@@ -5,9 +7,9 @@ class AddPlaceUseCase {
   }
 
   async execute(useCasePayload) {
-    const addCategory = new AddCategory(useCasePayload);
-    await this._categoryRepository.checkAvailabilityName(addCategory.name);
-    return this._categoryRepository.addCategory(addCategory);
+    const addPlace = new AddPlace(useCasePayload);
+    await this._categoryRepository.verifyCategoryExists(addPlace.category_id);
+    return this._placeRepository.addPlace(addPlace);
   }
 }
 

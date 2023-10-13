@@ -11,5 +11,5 @@ exports.up = (pgm) => {
 };
 
 exports.down = (pgm) => {
-  pgm.dropColumn(['media_type']);
+  pgm.dropColumn('payments', ['media_type']);
 };
