@@ -1,8 +1,9 @@
+/* eslint-disable max-classes-per-file */
 /* eslint-disable consistent-return */
 const express = require('express');
-const LoginUserUseCase = require('../../../Applications/use_case/LoginUserUseCase');
 const RefreshAuthenticationUseCase = require('../../../Applications/use_case/RefreshAuthenticationUseCase');
 const LogoutUserUseCase = require('../../../Applications/use_case/LogoutUserUseCase');
+const LoginUserUseCase = require('../../../Applications/use_case/LoginUserUseCase');
 
 class AuthenticationsHandler {
   constructor(container) {
@@ -19,7 +20,7 @@ class AuthenticationsHandler {
         LoginUserUseCase.name,
       );
       const { accessToken, refreshToken } = await loginUserUseCase.execute(
-        request.payload,
+        request.body,
       );
       return response.status(201).send({
         status: 'success',
