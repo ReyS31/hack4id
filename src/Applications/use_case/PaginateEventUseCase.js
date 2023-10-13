@@ -1,3 +1,4 @@
+const EventMini = require('../../Domains/events/entities/EventMini');
 const EventQuery = require('../../Domains/events/entities/EventQuery');
 
 class PaginateEventUseCase {
@@ -8,7 +9,7 @@ class PaginateEventUseCase {
   async execute(useCasePayload) {
     const eventQuery = new EventQuery(useCasePayload);
     const events = await this._eventRepository.pagination(eventQuery);
-    return events;
+    return { events: events.data.map((datum) => new EventMini(datum)), total: events.count };
   }
 }
 

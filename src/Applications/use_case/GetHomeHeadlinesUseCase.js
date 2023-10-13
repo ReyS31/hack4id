@@ -5,8 +5,8 @@ class GetHomeHeadlinesUseCase {
     this._eventRepository = eventRepository;
   }
 
-  async execute(useCasePayload) {
-    const data = await this._eventRepository.getById(useCasePayload);
+  async execute() {
+    const data = await this._eventRepository.getHomeHeadlines();
     return data.map((datum) => new EventMini(datum));
   }
 }

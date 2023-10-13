@@ -33,6 +33,8 @@ const PaginatePlaceUseCase = require('../Applications/use_case/PaginatePlaceUseC
 const GetCategoriesUseCase = require('../Applications/use_case/GetCategoriesUseCase');
 const GetPlaceUseCase = require('../Applications/use_case/GetPlaceUseCase');
 const PaginateEventUseCase = require('../Applications/use_case/PaginateEventUseCase');
+const GetEventUseCase = require('../Applications/use_case/GetEventUseCase');
+const GetHomeHeadlinesUseCase = require('../Applications/use_case/GetHomeHeadlinesUseCase');
 
 // creating container
 const container = createContainer();
@@ -242,9 +244,36 @@ container.register([
         },
       ],
     },
-  }, {
+  },
+  {
     key: PaginateEventUseCase.name,
     Class: PaginateEventUseCase,
+    parameter: {
+      injectType: 'destructuring',
+      dependencies: [
+        {
+          name: 'eventRepository',
+          internal: EventRepository.name,
+        },
+      ],
+    },
+  },
+  {
+    key: GetEventUseCase.name,
+    Class: GetEventUseCase,
+    parameter: {
+      injectType: 'destructuring',
+      dependencies: [
+        {
+          name: 'eventRepository',
+          internal: EventRepository.name,
+        },
+      ],
+    },
+  },
+  {
+    key: GetHomeHeadlinesUseCase.name,
+    Class: GetHomeHeadlinesUseCase,
     parameter: {
       injectType: 'destructuring',
       dependencies: [

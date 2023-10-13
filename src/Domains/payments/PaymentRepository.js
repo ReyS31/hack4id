@@ -1,5 +1,8 @@
+/* eslint-disable no-unused-vars */
 class PaymentRepository {
-    async getPayments(getPaymentsQuery) { }
+  getPayments(getPaymentsQuery) { }
 
-    async addPayment(addPayment) { }
+  addPayment(addPayment) { }
 }
+
+module.exports = PaymentRepository;

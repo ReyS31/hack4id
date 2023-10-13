@@ -80,7 +80,7 @@ class EventRepositoryPostgress extends EventRepository {
       values: countValues,
     });
 
-    return { events: result.rows, ...countRes.rows[0] };
+    return { data: result.rows, ...countRes.rows[0] };
   }
 
   async getHomeHeadlines() {

@@ -3,8 +3,9 @@ class EventMini {
     this.#verifyPayload(payload);
 
     this.id = payload.id;
-    this.place_id = payload.place_id;
+    this.user_id = payload.user_id;
     this.thumbnail = payload.thumbnail;
+    this.preview = payload.preview;
     this.title = payload.title;
     this.views = payload.views;
     this.pinned = payload.pinned ?? false;
@@ -14,7 +15,7 @@ class EventMini {
   #verifyPayload(payload) {
     const {
       id,
-      place_id,
+      user_id,
       thumbnail,
       title,
       created_at,
@@ -22,7 +23,7 @@ class EventMini {
 
     if (
       !id
-      || !place_id
+      || !user_id
       || !thumbnail
       || !title
       || !created_at
@@ -32,10 +33,10 @@ class EventMini {
 
     if (
       typeof id !== 'string'
-      || typeof place_id !== 'string'
+      || typeof user_id !== 'string'
       || typeof thumbnail !== 'string'
       || typeof title !== 'string'
-      || typeof created_at !== 'string'
+      || typeof created_at !== 'object'
     ) {
       throw new Error('EVENT_MINI.NOT_MEET_DATA_TYPE_SPECIFICATION');
     }

@@ -3,7 +3,7 @@ class Event {
     this.#verifyPayload(payload);
 
     this.id = payload.id;
-    this.place_id = payload.place_id;
+    this.user_id = payload.user_id;
     this.thumbnail = payload.thumbnail;
     this.title = payload.title;
     this.body = payload.body;
@@ -15,7 +15,7 @@ class Event {
   #verifyPayload(payload) {
     const {
       id,
-      place_id,
+      user_id,
       thumbnail,
       title,
       body,
@@ -24,7 +24,7 @@ class Event {
 
     if (
       !id
-      || !place_id
+      || !user_id
       || !thumbnail
       || !title
       || !body
@@ -35,11 +35,11 @@ class Event {
 
     if (
       typeof id !== 'string'
-      || typeof place_id !== 'string'
+      || typeof user_id !== 'string'
       || typeof thumbnail !== 'string'
       || typeof title !== 'string'
       || typeof body !== 'string'
-      || typeof created_at !== 'string'
+      || typeof created_at !== 'object'
     ) {
       throw new Error('EVENT.NOT_MEET_DATA_TYPE_SPECIFICATION');
     }
