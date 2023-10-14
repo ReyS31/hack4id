@@ -5,6 +5,7 @@ class Place {
 
     this.id = payload.id;
     this.category_id = payload.category_id;
+    this.category = payload.category ?? '';
     this.thumbnail = payload.thumbnail;
     this.name = payload.name;
     this.phone = payload.phone;
@@ -16,11 +17,7 @@ class Place {
 
   #verifyPayload(payload) {
     const {
-      id,
-      category_id,
-      name,
-      thumbnail,
-      address,
+      id, category_id, name, thumbnail, address,
     } = payload;
 
     if (!id || !category_id || !name || !thumbnail || !address) {
