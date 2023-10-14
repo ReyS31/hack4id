@@ -12,6 +12,7 @@ class Place {
     this.pinned = payload.pinned ?? false;
     this.email = payload.email;
     this.address = payload.address;
+    this.location = payload.json_location;
     this.social_media = payload.social_media;
   }
 

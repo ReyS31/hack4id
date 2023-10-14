@@ -172,7 +172,7 @@ class PlaceRepositoryPostgres extends PlaceRepository {
 
   async getById(id) {
     const query = {
-      text: 'SELECT pl.*, ctg.name as category FROM places as pl JOIN categories as ctg ON pl.category_id = ctg.id WHERE pl.id = $1',
+      text: 'SELECT pl.*, ctg.name as category, ST_AsGeoJSON(pl.location) as json_location FROM places as pl JOIN categories as ctg ON pl.category_id = ctg.id WHERE pl.id = $1',
       values: [id],
     };
 
